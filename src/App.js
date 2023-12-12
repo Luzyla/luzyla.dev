@@ -1,38 +1,13 @@
 import "./App.css";
-// import { IconName } from "react-icons/fa";
 import React from "react";
-import { Image } from "./components/Image";
 import Header from "./components/Header";
+import { Hola } from "./components/Hola";
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-
-      {/* <!-- SECCIÓN HOLA --> */}
-
-      <section className="seccion-hola" id="a-hola">
-        <div className="contenedor-hola">
-          <div className="texto-hola">
-            <h3>¡Hola! Soy</h3>
-            <h1>Lucila Di Lorenzo</h1>
-            <p className="p-hola">
-              Desarrolladora FrontEnd, Scrum Master y curiosa por naturaleza!
-            </p>
-
-            <ul>
-              <a href="#a-proyectos">
-                <li className="button">LO QUE HAGO</li>
-              </a>
-            </ul>
-          </div>
-          <Image
-            className="img-hola"
-            url="../images/hola-lu-left.svg"
-            txtAlt=""
-          ></Image>
-        </div>
-      </section>
+      <Hola></Hola>
 
       {/* <!-- SECCIÓN SKILLS --> */}
 

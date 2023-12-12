@@ -8,7 +8,6 @@ export default function Header() {
       <nav className="nav-header">
         <NavMenu id="ul-header"></NavMenu>
         <FaBars id="icono-burger"></FaBars>
-        {/* <i id="icono-burger" className="fas fa-bars"></i> */}
       </nav>
 
       {/* <!-- MENÚ DESPLEGABLE MOBILE --> */}

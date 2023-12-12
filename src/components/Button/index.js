@@ -1,10 +1,9 @@
 import React from "react";
 
-export function Button({url, className,txtButton}) {
- 
-    
-    
-    return <a href={url}>
-    <li className={className}>{txtButton}</li>
-  </a>
+export function Button({ url, target, className, txtButton }) {
+  return (
+    <a href={url} target={target}>
+      <li className={className}>{txtButton}</li>
+    </a>
+  );
 }

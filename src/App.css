@@ -160,6 +160,11 @@ a:hover {
     margin: 16px 0 40px 0;
 }
 
+.hola-link {
+    padding: 10px 40px;
+    margin: 4px;
+}
+
 /*--------------------------------
         SECCIÓN SKILLS
 ----------------------------------*/

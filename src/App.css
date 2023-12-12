@@ -194,7 +194,7 @@ a:hover {
     cursor: pointer;
 }
 
-.img-skills { 
+.img-skills {
     margin: 20px 70px 20px 50px;
     width: 50%;
 }
@@ -221,8 +221,8 @@ a:hover {
         SECCIÓN QUOTE
 ----------------------------------*/
 .seccion-quote {
-    background: rgb(0,223,192);
-    background: linear-gradient(180deg, rgba(0,223,192,1) 0%, rgba(27,70,61,1) 94%, rgba(33,60,56,1) 100%);
+    background: rgb(0, 223, 192);
+    background: linear-gradient(180deg, rgba(0, 223, 192, 1) 0%, rgba(27, 70, 61, 1) 94%, rgba(33, 60, 56, 1) 100%);
     color: #fafafa;
     padding: 100px 40px 100px;
     justify-content: center;
@@ -412,11 +412,11 @@ a:hover {
     .nav-header {
         margin-right: 5%;
     }
-   
+
     .menu-header {
         font-size: 16px;
     }
-   
+
     /*--------------------------------
             SECCIÓN HOLA
     ----------------------------------*/
@@ -525,14 +525,14 @@ a:hover {
         width: 70%;
         margin: 20px;
     }
-    
+
     .p-hola, h1, h3 {
         text-align: center;
     }
 
     /*--------------------------------
             TEXTOS
-    ----------------------------------*/   
+    ----------------------------------*/
 
     h1 {
         font-size: 60px;
@@ -561,7 +561,7 @@ a:hover {
         margin: 10px;
         font-size: 16px;
     }
-    
+
     /*--------------------------------
             SECCIÓN QUOTE
     ----------------------------------*/
@@ -578,15 +578,15 @@ a:hover {
     ----------------------------------*/
     .seccion-proyectos {
         padding-left: 10px;
-        padding-right: 10px; 
+        padding-right: 10px;
     }
-    
+
     .botonera-proyectos {
         padding-top: 10px;
         padding-bottom: 0;
         flex-wrap: wrap;
     }
-    
+
     /* -- MENÚ -- */
     .menu-proyectos {
         font-size: 14px;
@@ -598,7 +598,7 @@ a:hover {
         padding-right: 0;
         padding-top: 5px;
     }
-    
+
     /* -- CAJA DE CADA TARJETA -- */
     .proyectos {
         width: 230px;
@@ -739,7 +739,7 @@ a:hover {
         justify-content: center;
         flex-wrap: wrap;
         width: 80%;
-    
+
     }
 
     /* -- CAJA DE CADA TARJETA -- */
@@ -780,16 +780,25 @@ a:hover {
 /*Male acá armé la paleta de colores, simulando una clase, para tener todos los códigos HEX/RGB juntos*/
 
 .cupetín-de-colores {
-    color: #009c86; /*pc*/
-    color: #007b67; /* rgb(0,123,103); 006754; /*pad*/
-    color: #607b82; /* rgb(96,123,130); /*pantalla*/
-    color: #00dfc0; /* rgb(0,223,192); /*iconos laterales*/
-    color: #d3faf5; /*data bases*/
-    color: #483d8b; /*violeta complementario*/
-    color: rgb(0,128,128);
-    color: rgb(19,81,68); /*verde oscuro*/
-    color: rgb(64,81,85); /*gris oscuro*/
-    color: #a8f0df; /*teal muy clarito*/
+    color: #009c86;
+    /*pc*/
+    color: #007b67;
+    /* rgb(0,123,103); 006754; /*pad*/
+    color: #607b82;
+    /* rgb(96,123,130); /*pantalla*/
+    color: #00dfc0;
+    /* rgb(0,223,192); /*iconos laterales*/
+    color: #d3faf5;
+    /*data bases*/
+    color: #483d8b;
+    /*violeta complementario*/
+    color: rgb(0, 128, 128);
+    color: rgb(19, 81, 68);
+    /*verde oscuro*/
+    color: rgb(64, 81, 85);
+    /*gris oscuro*/
+    color: #a8f0df;
+    /*teal muy clarito*/
 }
 
 /*-------------------------

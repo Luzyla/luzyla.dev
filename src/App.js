@@ -1,5 +1,6 @@
 import "./App.css";
 // import { IconName } from "react-icons/fa";
+import React from "react";
 import { Image } from "./components/Image";
 import Header from "./components/Header";
 

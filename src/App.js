@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { Hola } from "./components/Hola";
 import { Skills } from "./components/Skills";
 import { Quote } from "./components/Quote";
+import { Proyectos } from "./components/Proyectos";
 
 function App() {
   return (
@@ -12,110 +13,7 @@ function App() {
       <Hola></Hola>
       <Skills></Skills>
       <Quote></Quote>
-
-      {/* <!-- SECCIÓN PROYECTOS --> */}
-
-      <section className="seccion-proyectos" id="a-proyectos">
-        <h2 className="h2-proyectos">Mis Proyectos</h2>
-
-        <div className="botonera-proyectos">
-          <button
-            data-name="todos"
-            className="menu-proyectos buttonClicked"
-            id="boton-todos"
-          >
-            TODOS
-          </button>
-          <button data-name="html" className="menu-proyectos">
-            HTML/CSS
-          </button>
-          <button data-name="js" className="menu-proyectos">
-            JavaScript
-          </button>
-          <button data-name="react" className="menu-proyectos">
-            React
-          </button>
-        </div>
-
-        <div className="contenedor-proyectos">
-          <a href="http://luzyla.github.io/proyecto-1/" target="_blank">
-            <div data-name="html" className="proyectos">
-              <img
-                className="img-proyectos"
-                src="./images/portfolio.svg"
-                alt="Portfolio de Luzyla"
-              />
-              <p className="p-titulo-proyectos">Portfolio</p>
-            </div>
-          </a>
-
-          <a href="http://luzyla.github.io/proyecto-2/" target="_blank">
-            <div data-name="js" className="proyectos">
-              <img
-                className="img-proyectos"
-                src="./images/tienda.svg"
-                alt="Tienda"
-              />
-              <p className="p-titulo-proyectos">Tienda</p>
-            </div>
-          </a>
-
-          <a href="http://luzyla.github.io/proyecto-3/" target="_blank">
-            <div data-name="js" className="proyectos">
-              <img
-                className="img-proyectos"
-                src="./images/juego-memoria-si.svg"
-                alt="Juego"
-              />
-              <p className="p-titulo-proyectos">Juego</p>
-            </div>
-          </a>
-
-          <a href="http://luzyla.github.io/proyecto-4/" target="_blank">
-            <div data-name="js" className="proyectos">
-              <img
-                className="img-proyectos"
-                src="./images/savings.svg"
-                alt="Controlador de Gastos"
-              />
-              <p className="p-titulo-proyectos">Controlador de Gastos</p>
-            </div>
-          </a>
-
-          <a href="http://luzyla.github.io/proyecto-5/" target="_blank">
-            <div data-name="js" className="proyectos">
-              <img
-                className="img-proyectos"
-                src="./images/admin-reuniones.svg"
-                alt="Buscador de Comics"
-              />
-              <p className="p-titulo-proyectos">Buscador Marvel Comics</p>
-            </div>
-          </a>
-
-          <a href="http://luzyla.github.io/proyecto-6/" target="_blank">
-            <div data-name="react" className="proyectos">
-              <img
-                className="img-proyectos"
-                src="./images/todo-app.svg"
-                alt="Todo app"
-              />
-              <p className="p-titulo-proyectos">Todo app</p>
-            </div>
-          </a>
-
-          <a href="http://luzyla.github.io/proyecto-7/" target="_blank">
-            <div data-name="react" className="proyectos">
-              <img
-                className="img-proyectos"
-                src="./images/movie-night.svg"
-                alt="Buscador de Películas"
-              />
-              <p className="p-titulo-proyectos">Buscador de Películas</p>
-            </div>
-          </a>
-        </div>
-      </section>
+      <Proyectos></Proyectos>
 
       {/* <!-- FOOTER --> */}
 
@@ -137,7 +35,7 @@ function App() {
           </ul>
         </nav>
 
-        <div className="div-contacto" id="a-contacto">
+        {/* <div className="div-contacto" id="a-contacto">
           <a target="_blank" href="https://github.com/Luzyla">
             <img
               className="img-contacto"
@@ -165,7 +63,7 @@ function App() {
               src="./images/social-media/medium-logo-2.svg"
             />
           </a>
-        </div>
+        </div> */}
 
         <p className="amor">
           Hecho con <span className="emoji-size">❤️</span> y mucho{" "}

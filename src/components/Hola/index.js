@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../Button";
+import { ButtonLink } from "../ButtonLink";
 import { Image } from "../Image";
 
 export function Hola() {
@@ -14,17 +14,17 @@ export function Hola() {
           </p>
 
           <ul>
-            <Button
+            <ButtonLink
               url="#a-proyectos"
               className="button"
               txtButton="LO QUE HAGO"
-            ></Button>
-            <Button
+            ></ButtonLink>
+            <ButtonLink
               url="http://linkedin.com/in/luzyla"
               target="_blank"
               className="menu-header hola-link"
               txtButton="Más sobre mí"
-            ></Button>
+            ></ButtonLink>
           </ul>
         </div>
         <Image

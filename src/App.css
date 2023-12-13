@@ -260,7 +260,8 @@ a:hover {
 }
 
 .ico-quote {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    height: 100px;
 }
 
 /*--------------------------------
@@ -371,7 +372,6 @@ a:hover {
     font-size: 25px;
 }
 
-
 /* -- LOGOS -- */
 .div-contacto {
     justify-content: center;
@@ -382,10 +382,6 @@ a:hover {
     padding: 10px;
     margin: 10px;
     transition: 0.3s;
-}
-
-.img-contacto:hover {
-    /*decidir efecto*/
 }
 
 /* -- TEXTO -- */
@@ -458,6 +454,11 @@ a:hover {
 
     h3 {
         font-size: 25px;
+    }
+
+    .ico-quote {
+        margin-bottom: 35px;
+        height: 90px;
     }
 
     /*--------------------------------
@@ -575,6 +576,11 @@ a:hover {
 
     .h3-quote {
         font-size: 50px;
+    }
+
+    .ico-quote {
+        margin-bottom: 20px;
+        height: 60px;
     }
 
     /*--------------------------------
@@ -715,7 +721,8 @@ a:hover {
     }
 
     .ico-quote {
-        margin-bottom: 15px;
+        margin-bottom: 35px;
+        height: 100px;
     }
 
     /*--------------------------------

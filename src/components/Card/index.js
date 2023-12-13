@@ -7,9 +7,10 @@ export function Card({
   url,
   altTxt,
   txtContent,
+  dataName,
 }) {
   return (
-    <div className={cardClass}>
+    <div className={cardClass} datatype={dataName}>
       <img className={imgClass} src={url} alt={altTxt} />
       <p className={txtClass}>{txtContent}</p>
     </div>

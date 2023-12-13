@@ -3,6 +3,7 @@ import React from "react";
 import { Header } from "./components/Header";
 import { Hola } from "./components/Hola";
 import { Skills } from "./components/Skills";
+import { Quote } from "./components/Quote";
 
 function App() {
   return (
@@ -10,25 +11,7 @@ function App() {
       <Header></Header>
       <Hola></Hola>
       <Skills></Skills>
-
-      {/* <!-- SECCIÓN QUOTE --> */}
-
-      <section className="seccion-quote" id="a-quote">
-        <div className="div-quote">
-          {/* <!-- FONTAWESOME --> */}
-          <i className="fas fa-brain ico-quote"></i>
-
-          <blockquote>
-            <p className="p-quote">
-              "Imagination is more important than knowledge.
-            </p>
-            <p className="p-quote">Knowledge is limited.</p>
-            <p className="p-quote">Imagination encircles the world."</p>
-          </blockquote>
-
-          <h3 className="h3-quote">Albert Einstein</h3>
-        </div>
-      </section>
+      <Quote></Quote>
 
       {/* <!-- SECCIÓN PROYECTOS --> */}
 

@@ -1,106 +1,15 @@
 import "./App.css";
 import React from "react";
-import Header from "./components/Header";
+import { Header } from "./components/Header";
 import { Hola } from "./components/Hola";
+import { Skills } from "./components/Skills";
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
       <Hola></Hola>
-
-      {/* <!-- SECCIÓN SKILLS --> */}
-
-      <section className="seccion-skills" id="a-skills">
-        <h2 className="h2-skills">Mis Conocimientos</h2>
-        <p className="texto-skills">
-          En lo que a programación se refiere, estas son las tecnologías de las
-          que tengo dominio. Seguramente pronto serán algunas más!
-        </p>
-
-        <div className="contenedor-skills">
-          <div className="skills">
-            <img
-              className="img-skills"
-              src="./images/logos/html5.svg"
-              alt="HTML5"
-            />
-            <p className="p-titulo-skills">HTML 5</p>
-          </div>
-
-          <div className="skills">
-            <img
-              className="img-skills"
-              src="./images/logos/css3.svg"
-              alt="CSS3"
-            />
-            <p className="p-titulo-skills">CSS 3</p>
-          </div>
-
-          <div className="skills">
-            <img
-              className="img-skills"
-              src="./images/logos/sass.svg"
-              alt="Saas"
-            />
-            <p className="p-titulo-skills">Saas</p>
-          </div>
-
-          <div className="skills">
-            <img
-              className="img-skills"
-              src="./images/logos/javascript.svg"
-              alt="JavaScript"
-            />
-            <p className="p-titulo-skills">JavaScript</p>
-          </div>
-
-          <div className="skills">
-            <img
-              className="img-skills"
-              src="./images/logos/react.svg"
-              alt="React"
-            />
-            <p className="p-titulo-skills">React</p>
-          </div>
-
-          <div className="skills">
-            <img
-              className="img-skills"
-              src="./images/logos/git.svg"
-              alt="GIT"
-            />
-            <p className="p-titulo-skills">GIT</p>
-          </div>
-
-          <div className="skills">
-            <img
-              className="img-skills logos-skills"
-              src="./images/logos/docker.svg"
-              alt="Docker"
-            />
-            <p className="p-titulo-skills">Docker</p>
-          </div>
-
-          <div className="skills">
-            <img
-              className="img-skills logos-skills"
-              src="./images/logos/dbeaver.svg"
-              alt="DBeaver"
-            />
-            <p className="p-titulo-skills">DBeaver</p>
-          </div>
-
-          <div className="skills">
-            <img
-              className="img-skills logos-skills"
-              src="./images/logos/postman-api.svg"
-              alt="Postman"
-            />
-            <p className="p-titulo-skills">Postman</p>
-          </div>
-        </div>
-      </section>
+      <Skills></Skills>
 
       {/* <!-- SECCIÓN QUOTE --> */}
 

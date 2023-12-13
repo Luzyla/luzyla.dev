@@ -2,7 +2,7 @@ import React from "react";
 import { NavMenu } from "../NavMenu";
 import { FaBars } from "react-icons/fa6";
 
-export default function Header() {
+export function Header() {
   return (
     <header className="App-header">
       <nav className="nav-header">

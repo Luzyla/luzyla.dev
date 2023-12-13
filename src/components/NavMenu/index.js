@@ -1,27 +1,27 @@
 import React from "react";
 import { ButtonLink } from "../ButtonLink";
 
-export function NavMenu({ id }) {
+export function NavMenu({ id, classNameBtn }) {
   return (
     <ul id={id}>
       <ButtonLink
         url="#a-hola"
-        className="menu-header"
+        className={classNameBtn}
         txtButton="HOLA"
       ></ButtonLink>
       <ButtonLink
         url="#a-skills"
-        className="menu-header"
+        className={classNameBtn}
         txtButton="CONOCIMIENTOS"
       ></ButtonLink>
       <ButtonLink
         url="#a-proyectos"
-        className="menu-header"
+        className={classNameBtn}
         txtButton="PROYECTOS"
       ></ButtonLink>
       <ButtonLink
         url="#a-contacto"
-        className="menu-header button"
+        className={`${classNameBtn} button`}
         txtButton="CONTACTO"
       ></ButtonLink>
     </ul>

@@ -6,7 +6,7 @@ export function Header() {
   return (
     <header className="App-header">
       <nav className="nav-header">
-        <NavMenu id="ul-header"></NavMenu>
+        <NavMenu id="ul-header" classNameBtn="menu-header"></NavMenu>
         <FaBars id="icono-burger"></FaBars>
       </nav>
 

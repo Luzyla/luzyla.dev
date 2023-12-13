@@ -2,14 +2,11 @@ import React from "react";
 import { FaMedapps } from "react-icons/fa6";
 
 export function Quote() {
+  const isMobile = window.innerWidth <= 768;
   return (
     <section className="seccion-quote" id="a-quote">
       <div className="div-quote">
-        <FaMedapps
-          className="ico-quote"
-          //   style={{ height: "0.5em" }}
-          //   size="200px"
-        />
+        <FaMedapps className="ico-quote" size={isMobile ? "fa-sm" : "fa-2xl"} />
 
         <blockquote>
           <p className="p-quote">

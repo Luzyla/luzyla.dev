@@ -254,15 +254,13 @@ a:hover {
     font-weight: normal;
 }
 
-/* .img-quote {
+.img-quote {
     width: 15%;
     padding-bottom: 80px;
-} */
+}
 
 .ico-quote {
-    /* font-size: 200px; */
-    /* height: 0.5em; */
-    margin-bottom: 60px;
+    margin-bottom: 25px;
 }
 
 /*--------------------------------
@@ -716,15 +714,8 @@ a:hover {
         font-size: 70px;
     }
 
-    /* .img-quote {
-        width: 25%;
-        padding-bottom: 100px;
-        padding-top: 100px;
-    } */
-
     .ico-quote {
-        /* font-size: 100px; */
-        /* margin-bottom: 60px; */
+        margin-bottom: 15px;
     }
 
     /*--------------------------------

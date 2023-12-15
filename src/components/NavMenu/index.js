@@ -1,9 +1,9 @@
 import React from "react";
 import { ButtonLink } from "../ButtonLink";
 
-export function NavMenu({ id, classNameBtn }) {
+export function NavMenu({ id, classNameBtn, classNameList }) {
   return (
-    <ul id={id}>
+    <ul id={id} className={classNameList}>
       <ButtonLink
         url="#a-hola"
         className={classNameBtn}

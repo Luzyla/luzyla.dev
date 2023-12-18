@@ -2,6 +2,7 @@ import React from "react";
 import { NavMenu } from "../NavMenu";
 import { SocialMedia } from "../SocialMedia";
 import { Signature } from "../Signature";
+import { FreeResources } from "../FreeResources";
 
 export function Footer() {
   return (
@@ -12,24 +13,7 @@ export function Footer() {
 
       <SocialMedia></SocialMedia>
       <Signature></Signature>
-
-      <div className="footer-recursos">
-        <a href="https://stories.freepik.com/web">
-          Illustration by Stories by Freepik
-        </a>
-        <a href="https://fontawesome.com/icons">Icons by Fontawesome</a>
-        <a
-          href="https://www.flaticon.com/authors/darius-dan"
-          title="Darius Dan"
-        >
-          favicon by Darius Dan
-        </a>{" "}
-        from{" "}
-        <a href="https://www.flaticon.com/" title="Flaticon">
-          {" "}
-          www.flaticon.com
-        </a>
-      </div>
+      <FreeResources></FreeResources>
     </footer>
   );
 }

@@ -11,7 +11,6 @@ export function Footer() {
       </nav>
 
       <SocialMedia></SocialMedia>
-
       <Signature></Signature>
 
       <div className="footer-recursos">

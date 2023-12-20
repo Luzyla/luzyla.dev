@@ -26,7 +26,7 @@ const dataResources = [
   },
 ];
 
-export function FreeResources({}) {
+export function FreeResources() {
   return (
     <div className="footer-recursos">
       {dataResources.map((data) => (

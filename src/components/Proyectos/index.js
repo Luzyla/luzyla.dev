@@ -44,6 +44,30 @@ const initProjectList = [
     altText: "Buscador de Películas",
     txtContent: "Buscador de Películas",
   },
+  // {
+  //   id: 6,
+  //   link: "",
+  //   dataName: "",
+  //   imageUrl: "",
+  //   altText: "",
+  //   txtContent: "MyTree",
+  // },
+  // {
+  //   id: 7,
+  //   link: "http://inmobdilorenzo.com.ar",
+  //   dataName: "html",
+  //   imageUrl: "",
+  //   altText: "MyTree Inmobiliaria DL",
+  //   txtContent: "MyTree Inmobiliaria DL",
+  // },
+  // {
+  //   id: 8,
+  //   link: "",
+  //   dataName: "",
+  //   imageUrl: "",
+  //   altText: "",
+  //   txtContent: "Books UTN",
+  // },
 ];
 
 export function Proyectos() {
@@ -83,30 +107,4 @@ export function Proyectos() {
       </div>
     </section>
   );
-}
-
-{
-  /* <Link url="http://inmobdilorenzo.com.ar" target="_blank">
-          <Card
-            dataName="html"
-            cardClass="proyectos"
-            imgClass="img-proyectos"
-            url="./images/"
-            altTxt="MyTree Inmobiliaria DL"
-            txtClass="p-titulo-proyectos"
-            txtContent="MyTree Inmobiliaria DL"
-          ></Card>
-        </Link>
-
-        <Link url="" target="_blank">
-          <Card
-            dataName="react"
-            cardClass="proyectos"
-            imgClass="img-proyectos"
-            url="./images/"
-            altTxt="Todo app"
-            txtClass="p-titulo-proyectos"
-            txtContent="Todo app"
-          ></Card>
-        </Link> */
 }

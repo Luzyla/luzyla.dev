@@ -44,30 +44,14 @@ const initProjectList = [
     altText: "Buscador de Películas",
     txtContent: "Buscador de Películas",
   },
-  // {
-  //   id: 6,
-  //   link: "",
-  //   dataName: "",
-  //   imageUrl: "",
-  //   altText: "",
-  //   txtContent: "MyTree",
-  // },
-  // {
-  //   id: 7,
-  //   link: "http://inmobdilorenzo.com.ar",
-  //   dataName: "html",
-  //   imageUrl: "",
-  //   altText: "MyTree Inmobiliaria DL",
-  //   txtContent: "MyTree Inmobiliaria DL",
-  // },
-  // {
-  //   id: 8,
-  //   link: "",
-  //   dataName: "",
-  //   imageUrl: "",
-  //   altText: "",
-  //   txtContent: "Books UTN",
-  // },
+  {
+    id: 6,
+    link: "http://inmobdilorenzo.com.ar",
+    dataName: "html",
+    imageUrl: "./images/bonsai-svgrepo-com.svg",
+    altText: "MyTree Inmobiliaria DL",
+    txtContent: "Inmobiliaria DL - MyTree",
+  },
 ];
 
 export function Proyectos() {

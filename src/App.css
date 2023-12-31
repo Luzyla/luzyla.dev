@@ -540,6 +540,12 @@ a:hover {
         text-align: center;
     }
 
+    .button-section {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
     /*--------------------------------
             TEXTOS
     ----------------------------------*/

@@ -8,8 +8,9 @@ export function Quote() {
     <section className="seccion-quote" id="a-quote">
       <div className="div-quote">
         <FaMedapps
-          className="ico-quote"
-          size={isMobile ? "fa-sm" : isBigScreen ? "fa-2xl" : "fa-xl"}
+          className={`ico-quote ${
+            isMobile ? "ico-mobile" : isBigScreen ? "ico-bigscreen" : ""
+          }`}
         />
 
         <blockquote>

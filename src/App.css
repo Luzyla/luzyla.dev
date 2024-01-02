@@ -262,7 +262,16 @@ a:hover {
 
 .ico-quote {
     margin-bottom: 35px;
-    height: 100px;
+    width: 4em;
+    /* height: 3em; */
+}
+
+.ico-mobile {
+    width: 2em;
+}
+
+.ico-bigscreen {
+    width: 6em;
 }
 
 /*--------------------------------

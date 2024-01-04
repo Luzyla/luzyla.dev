@@ -70,10 +70,12 @@ ul, .list-style {
 
 a, .link-style {
     text-decoration: none;
+    transition: transform 0.4s;
+    font-weight: bold;
 }
 
 .link-style:hover {
-    font-weight: bold;
+    transform: scale(1.1);
 }
 
 /*--------------------------------
@@ -98,6 +100,7 @@ a, .link-style {
     border-radius: 25px;
     color: #d3faf5;
     padding: 10px 40px;
+    font-weight: bold;
 }
 
 /*--------------------------------

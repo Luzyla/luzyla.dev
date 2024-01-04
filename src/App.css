@@ -166,6 +166,17 @@ a:hover {
     margin: 4px;
 }
 
+.contenedor-icon-socialmedia {
+    display: flex;
+    margin: 1rem;
+}
+
+.icon-socialmedia {
+    margin-right: 3rem;
+    align-self: center;
+    /* margin-top: 2rem; */
+}
+
 /*--------------------------------
         SECCIÓN SKILLS
 ----------------------------------*/

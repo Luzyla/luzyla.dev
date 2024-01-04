@@ -1,6 +1,7 @@
 import React from "react";
 import { ButtonLink } from "../ButtonLink";
 import { Image } from "../Image";
+import { SocialMediaIcons } from "../SocialMediaIcons";
 
 export function Hola() {
   return (
@@ -18,13 +19,9 @@ export function Hola() {
               url="#a-proyectos"
               className="button"
               txtButton="LO QUE HAGO"
-            ></ButtonLink>
-            <ButtonLink
-              url="http://linkedin.com/in/luzyla"
-              target="_blank"
-              className="menu-header hola-link"
-              txtButton="Más sobre mí"
-            ></ButtonLink>
+              classNameLink="icon-socialmedia"
+            />
+            <SocialMediaIcons />
           </ul>
         </div>
         <Image

@@ -5,7 +5,7 @@ export function Link({ url, target, children, className }) {
     <a
       href={url}
       target={target}
-      className={className}
+      className={`link-style ${className}`}
       rel="noopener noreferrer"
     >
       {children}

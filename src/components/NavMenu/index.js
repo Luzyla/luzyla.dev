@@ -3,7 +3,7 @@ import { ButtonLink } from "../ButtonLink";
 
 export function NavMenu({ id, classNameBtn, classNameList }) {
   return (
-    <ul id={id} className={classNameList}>
+    <ul id={id} className={`list-style ${classNameList}`}>
       <ButtonLink
         url="#a-hola"
         className={classNameBtn}

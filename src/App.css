@@ -63,16 +63,16 @@ h3 {
 /*--------------------------------
         NAV BAR GENERAL
 ----------------------------------*/
-ul {
+ul, .list-style {
     list-style-type: none;
     align-items: flex-end;
 }
 
-a {
+a, .link-style {
     text-decoration: none;
 }
 
-a:hover {
+.link-style:hover {
     font-weight: bold;
 }
 

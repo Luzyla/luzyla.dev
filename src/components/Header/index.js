@@ -12,7 +12,7 @@ export function Header() {
   return (
     <header className="App-header">
       <nav className="nav-header">
-        <NavMenu id="ul-header" classNameBtn="menu-header"></NavMenu>
+        <NavMenu id="ul-header" classNameBtn="menu-header nav-header"></NavMenu>
         <FaBars id="icono-burger" onClick={handleToggleMenu}></FaBars>
       </nav>
 

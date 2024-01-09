@@ -20,9 +20,10 @@ export function NavMenu({ id, classNameBtn, classNameList }) {
         txtButton="PROYECTOS"
       ></ButtonLink>
       <ButtonLink
-        url="#a-contacto"
+        url="http://instagram.com/luzyla.dev"
         className={`${classNameBtn} button`}
         txtButton="CONTACTO"
+        target="_blank"
       ></ButtonLink>
     </ul>
   );

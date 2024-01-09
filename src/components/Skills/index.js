@@ -88,6 +88,7 @@ export function Skills() {
       <div className="contenedor-skills">
         {skillSet.map((skill) => (
           <Card
+            key={skill.id}
             cardClass="skills"
             imgClass={skill.imgClass}
             txtClass="p-titulo-skills"

@@ -1,3 +1,8 @@
 # https://www.robotstxt.org/robotstxt.html
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemaps: https://luzyla.dev/sitemap.xml

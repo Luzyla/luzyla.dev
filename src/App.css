@@ -22,6 +22,7 @@ header {
     width: 100vw;
     justify-content: flex-end;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+
 }
 
 /*-------------------------
@@ -91,8 +92,11 @@ a, .link-style {
     padding: 10px;
 }
 
-#icono-burger {
-    display: none;
+.icono-burger {
+    display: block;
+    font-size: 30px;
+    color: #007b67;
+    margin: 10px 0;
 }
 
 .button {
@@ -110,7 +114,7 @@ a, .link-style {
     display: flex;
     z-index: 1;
     position: absolute;
-    top: -250px;
+    top: 80px;
     right: 0;
     transition: 1s;
 }
@@ -124,7 +128,7 @@ a, .link-style {
 
 .menu-desplegado {
     right: 0;
-    top: 70px;
+    top: 0;
 }
 
 /*--------------------------------
@@ -528,7 +532,7 @@ a, .link-style {
         display: none;
     }
 
-    #icono-burger {
+    .icono-burger {
         display: block;
         font-size: 30px;
         color: #007b67;

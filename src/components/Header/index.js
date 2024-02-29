@@ -1,32 +1,48 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavMenu } from "../NavMenu";
 import { FaBars } from "react-icons/fa6";
 
 export function Header() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [showMenu, setShowMenu] = useState(false);
 
   const handleToggleMenu = () => {
-    setShowMenu((prev) => !prev);
+    setShowMenu(!showMenu);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <header className="App-header">
-      <nav className="nav-header">
-        <NavMenu id="ul-header" classNameBtn="menu-header nav-header"></NavMenu>
-        <FaBars id="icono-burger" onClick={handleToggleMenu}></FaBars>
-      </nav>
-
-      {/* <!-- MENÚ DESPLEGABLE MOBILE --> */}
       <nav
-        id="menu-mobile"
-        className={`contenedor-barra-mobile ${
+        className={`${isMobile ? "nav-header" : "nav-header"} ${
           showMenu ? "menu-desplegado" : ""
         }`}
       >
+        <FaBars
+          className={isMobile ? "icono-burger" : "hidden"}
+          onClick={handleToggleMenu}
+        ></FaBars>
         <NavMenu
-          id="lista-barra-mobile"
-          classNameList="barra-mobile"
-          classNameBtn="menu-header"
+          classNameList={`${
+            isMobile
+              ? showMenu
+                ? "barra-mobile contenedor-barra-mobile"
+                : "hidden"
+              : ""
+          }`}
+          classNameBtn="menu-header nav-header"
+          handleToggleMenu={handleToggleMenu}
         ></NavMenu>
       </nav>
     </header>

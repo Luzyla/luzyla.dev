@@ -6,7 +6,7 @@ import { Link } from "../Link";
 const initProjectList = [
   {
     id: 1,
-    link: "http://luzyla.github.io/proyecto-1/",
+    link: "http://luzyla.github.io/proyecto-1-portfolio/",
     dataName: "html",
     imageUrl: "./images/portfolio.svg",
     altText: "Portfolio de Luzyla",
@@ -14,7 +14,7 @@ const initProjectList = [
   },
   {
     id: 2,
-    link: "http://luzyla.github.io/proyecto-2/",
+    link: "http://luzyla.github.io/proyecto-2-tienda-viajes/",
     dataName: "js",
     imageUrl: "./images/tienda.svg",
     altText: "Tienda",
@@ -22,7 +22,7 @@ const initProjectList = [
   },
   {
     id: 3,
-    link: "http://luzyla.github.io/proyecto-3/",
+    link: "http://luzyla.github.io/proyecto-3-matcheadas/",
     dataName: "js",
     imageUrl: "./images/juego-memoria-si.svg",
     altText: "Juego",
@@ -30,7 +30,7 @@ const initProjectList = [
   },
   {
     id: 4,
-    link: "http://luzyla.github.io/proyecto-5/",
+    link: "http://luzyla.github.io/proyecto-5-marvel-comics/",
     dataName: "js",
     imageUrl: "./images/admin-reuniones.svg",
     altText: "Buscador de Comics",

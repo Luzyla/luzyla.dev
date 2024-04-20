@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap'); */
 
 html {
     scroll-behavior: smooth;
+    scrollbar-color: #009c86 #fafafa;
+    scrollbar-width: thin;
 }
 
 body {
     color: #2e2e31;
     font-family: 'Montserrat', 'sans serif';
+
 }
 
 * {
@@ -19,7 +22,7 @@ body {
 header {
     background-color: #ffffff;
     padding: 20px 0;
-    width: 100vw;
+    width: 100%;
     justify-content: flex-end;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
 

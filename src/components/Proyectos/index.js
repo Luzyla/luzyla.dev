@@ -60,8 +60,16 @@ const initProjectList = [
     altText: "Memelandia",
     txtContent: "Memelandia",
   },
+  /* {
+    id: 8,
+    link: "http://tamarabrilla.com",
+    dataName: "html",
+    imageUrl: "./images/",
+    altText: "Tamara Brilla",
+    txtContent: "Tamara Brilla",
+  }, */
 ];
-/* <a href="https://storyset.com/online">Online illustrations by Storyset</a> */
+
 export function Proyectos() {
   const [projectList, setProjectList] = useState(initProjectList);
 

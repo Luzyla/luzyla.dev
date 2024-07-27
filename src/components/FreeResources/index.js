@@ -30,7 +30,7 @@ const dataResources = [
     children: "https://storyset.com",
     title: "Online illustrations by Storyset",
   },
-];
+]
 
 export function FreeResources() {
   return (

@@ -86,7 +86,7 @@ export function Proyectos() {
 
   return (
     <section className="seccion-proyectos" id="a-proyectos">
-      <h2 className="h2-proyectos">Mis Proyectos</h2>
+      <h2 className="h2-proyectos">Portfolio de Proyectos</h2>
 
       <SorterBar onSort={handleSortProjectList} />
 

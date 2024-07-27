@@ -48,12 +48,20 @@ const initProjectList = [
     id: 6,
     link: "http://inmobdilorenzo.com.ar",
     dataName: "html",
-    imageUrl: "./images/bonsai-svgrepo-com.svg",
+    imageUrl: "./images/social-tree.svg",
     altText: "MyTree Inmobiliaria DL",
-    txtContent: "Inmobiliaria DL - MyTree",
+    txtContent: "MyTree Inmobiliaria DL",
+  },
+  {
+    id: 7,
+    link: "http://memelandia.luzyla.dev",
+    dataName: "js",
+    imageUrl: "./images/upload-memelandia.svg",
+    altText: "Memelandia",
+    txtContent: "Memelandia",
   },
 ];
-
+/* <a href="https://storyset.com/online">Online illustrations by Storyset</a> */
 export function Proyectos() {
   const [projectList, setProjectList] = useState(initProjectList);
 

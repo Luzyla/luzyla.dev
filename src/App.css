@@ -1,5 +1,27 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+:root {
+    --color-pc: #009c86;
+    /*pc*/
+    --color-pad: #007b67;
+    /* rgb(0,123,103); 006754; /*pad*/
+    --color-pantalla: #607b82;
+    /* rgb(96,123,130); /*pantalla*/
+    --color-iconos-laterales: #00dfc0;
+    /* rgb(0,223,192); /*iconos laterales*/
+    --color-data-bases: #d3faf5;
+    /*data bases*/
+    --color-violeta-complementario: #483d8b;
+    /*violeta complementario*/
+    --color-verde: rgb(0, 128, 128);
+    --color-verde-oscuro: rgb(19, 81, 68);
+    /*verde oscuro*/
+    --color-gris-oscuro: rgb(64, 81, 85);
+    /*gris oscuro*/
+    --color-teal-muy-clarito: #a8f0df;
+    /*teal muy clarito*/
+}
 
 html {
     scroll-behavior: smooth;
@@ -184,7 +206,8 @@ a, .link-style {
 .icon-socialmedia {
     margin-right: 3rem;
     align-self: center;
-    /* margin-top: 2rem; */
+    white-space: nowrap;
+    /* ^^^ el texto del boton queda siempre en la misma línea */
 }
 
 /*--------------------------------
@@ -823,7 +846,7 @@ a, .link-style {
     PALETA DE COLORES
 -------------------------*/
 
-/*Male acá armé la paleta de colores, simulando una clase, para tener todos los códigos HEX/RGB juntos*/
+/* Armé la paleta de colores simulando una clase, para tener todos los códigos HEX/RGB juntos */
 
 .cupetín-de-colores {
     color: #009c86;

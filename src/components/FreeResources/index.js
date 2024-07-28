@@ -24,7 +24,13 @@ const dataResources = [
     children: "www.flaticon.com",
     title: "Flaticon",
   },
-];
+  {
+    id: 5,
+    url: "https://storyset.com/online",
+    children: "https://storyset.com",
+    title: "Online illustrations by Storyset",
+  },
+]
 
 export function FreeResources() {
   return (

@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <Header></Header>
       <Hola></Hola>
-      <Skills></Skills>
-      <Quote></Quote>
       <Proyectos></Proyectos>
+      <Quote></Quote>
+      <Skills></Skills>
       <Footer></Footer>
     </div>
   );

@@ -17,7 +17,7 @@ export function NavMenu({ id, classNameBtn, classNameList }) {
       <ButtonLink
         url="#a-proyectos"
         className={classNameBtn}
-        txtButton="PROYECTOS"
+        txtButton="PORTFOLIO"
       ></ButtonLink>
       <ButtonLink
         url="http://instagram.com/luzyla.dev"

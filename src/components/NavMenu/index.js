@@ -15,6 +15,11 @@ export function NavMenu({ id, classNameBtn, classNameList }) {
         txtButton="CONOCIMIENTOS"
       ></ButtonLink>
       <ButtonLink
+        url="#a-quote"
+        className={classNameBtn}
+        txtButton="QUOTE"
+      ></ButtonLink>
+      <ButtonLink
         url="#a-proyectos"
         className={classNameBtn}
         txtButton="PORTFOLIO"

@@ -800,14 +800,10 @@ a, .link-style {
     ----------------------------------*/
 
     /* -- CAJA DE TARJETAS -- */
-    .contenedor-skills {
-        width: 70%;
-    }
 
     /* -- CAJA DE CADA TARJETA -- */
     .skills {
-        width: 300px;
-        height: 269px;
+        width: 18%;
     }
 
     .texto-skills {

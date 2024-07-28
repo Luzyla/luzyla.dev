@@ -672,6 +672,7 @@ a, .link-style {
 
     .skills {
         width: 35%;
+        min-width: 125px;
     }
 
     .img-skills {

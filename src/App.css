@@ -109,7 +109,7 @@ a, .link-style {
 ----------------------------------*/
 .nav-header {
     margin-right: 10%;
-    color: #483d8b;
+    color: var(--color-pantalla);
 }
 
 .menu-header, .menu-proyectos, .menu-footer {

@@ -568,11 +568,12 @@ a, .link-style {
 
     /* -- CAJA DE TARJETAS -- */
     .contenedor-skills {
-        width: 100%;
+        width: 80%;
     }
 
     .texto-skills {
         padding: 10px 100px;
+        white-space: wrap;
     }
 
     /*--------------------------------

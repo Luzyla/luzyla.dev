@@ -16,7 +16,7 @@ const initProjectList = [
     id: 2,
     link: "http://luzyla.github.io/proyecto-2-tienda-viajes/",
     dataName: "js",
-    imageUrl: "./images/tienda.svg",
+    imageUrl: "./images/ecommerce.svg",
     altText: "Tienda",
     txtContent: "Tienda",
   },
@@ -24,15 +24,15 @@ const initProjectList = [
     id: 3,
     link: "http://luzyla.github.io/proyecto-3-matcheadas/",
     dataName: "js",
-    imageUrl: "./images/juego-memoria-si.svg",
-    altText: "Juego",
-    txtContent: "Juego",
+    imageUrl: "./images/matcheadas.svg",
+    altText: "Matcheadas",
+    txtContent: "Matcheadas",
   },
   {
     id: 4,
     link: "http://luzyla.github.io/proyecto-5-marvel-comics/",
     dataName: "js",
-    imageUrl: "./images/admin-reuniones.svg",
+    imageUrl: "./images/comics.svg",
     altText: "Buscador de Comics",
     txtContent: "Buscador de Comics",
   },
@@ -46,11 +46,11 @@ const initProjectList = [
   },
   {
     id: 6,
-    link: "http://inmobdilorenzo.com.ar",
+    link: "https://luzyla.github.io/mytree/",
     dataName: "html",
     imageUrl: "./images/social-tree.svg",
-    altText: "MyTree Inmobiliaria DL",
-    txtContent: "MyTree Inmobiliaria DL",
+    altText: "MyTree",
+    txtContent: "MyTree",
   },
   {
     id: 7,
@@ -60,8 +60,40 @@ const initProjectList = [
     altText: "Memelandia",
     txtContent: "Memelandia",
   },
-  /* {
+  {
     id: 8,
+    link: "https://luzyla.github.io/piedraPapelTijera/",
+    dataName: "js",
+    imageUrl: "./images/hands-play.svg",
+    altText: "Piedra, papel o tijera",
+    txtContent: "Piedra, papel o tijera",
+  },
+  {
+    id: 9,
+    link: "https://luzyla.github.io/mug/",
+    dataName: "html",
+    imageUrl: "./images/mug.svg",
+    altText: "Mug",
+    txtContent: "Mug",
+  },
+  {
+    id: 10,
+    link: "https://luzyla.github.io/librosyviajes-all/",
+    dataName: "html",
+    imageUrl: "./images/book-lover.svg",
+    altText: "Libros y Viajes",
+    txtContent: "Libros y Viajes",
+  },
+  {
+    id: 11,
+    link: "https://nleats-surprise.netlify.app/",
+    dataName: "js",
+    imageUrl: "./images/thank-you.svg",
+    altText: "Random Quotes",
+    txtContent: "Random Quotes",
+  },
+  /* {
+    id: ,
     link: "http://tamarabrilla.com",
     dataName: "html",
     imageUrl: "./images/",
@@ -86,7 +118,7 @@ export function Proyectos() {
 
   return (
     <section className="seccion-proyectos" id="a-proyectos">
-      <h2 className="h2-proyectos">Portfolio de Proyectos</h2>
+      <h2 className="h2-proyectos">Portfolio</h2>
 
       <SorterBar onSort={handleSortProjectList} />
 

@@ -54,36 +54,65 @@ const skillSet = [
     id: 7,
     cardClass: "skills",
     imgClass: "img-skills",
-    url: "../images/logos/next-js.svg",
-    altTxt: "Next.js",
-    txtContent: "Next.js",
+    url: "../images/logos/github-logo.svg",
+    altTxt: "GitHub",
+    txtContent: "GitHub",
   },
   {
     id: 8,
     cardClass: "skills",
-    imgClass: "img-skills",
-    url: "../images/logos/dbeaver.svg",
-    altTxt: "DBeaver",
-    txtContent: "DBeaver",
+    imgClass: "img-skills logos-skills",
+    url: "../images/logos/ubuntu-inverse.svg",
+    altTxt: "Linux Ubuntu",
+    txtContent: "Linux Ubuntu",
   },
   {
     id: 9,
     cardClass: "skills",
+    imgClass: "img-skills",
+    url: "../images/logos/bash.svg",
+    altTxt: "Bash",
+    txtContent: "Bash",
+  },
+  {
+    id: 10,
+    cardClass: "skills",
     imgClass: "img-skills logos-skills",
-    url: "../images/logos/postman-api.svg",
-    altTxt: "Postman",
-    txtContent: "Postman",
+    url: "../images/logos/domain.png",
+    altTxt: "Dominios web",
+    txtContent: "Dominios web",
+  },
+ 
+  {
+    id: 11,
+    cardClass: "skills",
+    imgClass: "img-skills logos-skills",
+    url: "../images/logos/hosting.png",
+    altTxt: "Hosting web",
+    txtContent: "Hosting web",
+  },
+  {
+    id: 12,
+    cardClass: "skills",
+    imgClass: "img-skills",
+    url: "../images/logos/agile.png",
+    altTxt: "Agile",
+    txtContent: "Agile",
+  },
+  {
+    id: 13,
+    cardClass: "skills",
+    imgClass: "img-skills logos-skills",
+    url: "../images/logos/notion.svg",
+    altTxt: "Notion",
+    txtContent: "Notion",
   },
 ];
 
 export function Skills() {
   return (
     <section className="seccion-skills" id="a-skills">
-      <h2 className="h2-skills">Mis Conocimientos</h2>
-      <p className="texto-skills">
-        En lo que a programación se refiere, estas son las tecnologías de las
-        que tengo dominio. Seguramente pronto serán algunas más!
-      </p>
+      <h2 className="h2-skills">Habilidades y Tecnologías</h2>
 
       <div className="contenedor-skills">
         {skillSet.map((skill) => (

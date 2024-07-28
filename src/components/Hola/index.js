@@ -18,7 +18,7 @@ export function Hola() {
             <ButtonLink
               url="#a-proyectos"
               className="button"
-              txtButton="LO QUE HAGO"
+              txtButton="PORTFOLIO"
               classNameLink="icon-socialmedia"
             />
             <SocialMediaIcons />

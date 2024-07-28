@@ -109,7 +109,7 @@ a, .link-style {
 ----------------------------------*/
 .nav-header {
     margin-right: 10%;
-    color: #483d8b;
+    color: var(--color-pantalla);
 }
 
 .menu-header, .menu-proyectos, .menu-footer {
@@ -225,7 +225,7 @@ a, .link-style {
 .contenedor-skills {
     width: 80%;
     margin-top: 40px;
-    padding: 30px;
+    padding: 2rem;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -235,22 +235,25 @@ a, .link-style {
     background-color: #fafafa;
     border: 1px #dddfe5 solid;
     border-radius: 10px;
-    width: 260px;
-    height: 229px;
-    margin: 10px;
-    padding: 30px;
+    width: 30%;
+    margin: 0.5rem;
+    padding: 2rem;
     color: #2e2e31;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-skills {
-    margin: 20px 70px 20px 50px;
-    width: 50%;
+    width: 65%;
+    height: auto;
 }
 
 .logos-skills {
-    max-height: 65%;
     justify-content: center;
 }
 
@@ -265,6 +268,9 @@ a, .link-style {
 .p-titulo-skills {
     font-weight: 700;
     font-size: 20px;
+    white-space: nowrap;
+    padding-top: 1rem;
+    margin: 20px 0 0 0;
 }
 
 /*--------------------------------
@@ -307,7 +313,7 @@ a, .link-style {
 .ico-quote {
     margin-bottom: 35px;
     width: 4em;
-    /* height: 3em; */
+    height: 3.5rem;
 }
 
 .ico-mobile {
@@ -420,6 +426,7 @@ a, .link-style {
 .menu-footer {
     font-size: 14px;
     color: #00dfc0;
+    color: var(--color-teal-muy-clarito);
 }
 
 .emoji-size {
@@ -454,9 +461,46 @@ a, .link-style {
 }
 
 .footer-recursos {
-    display: none;
+    font-size: 9px;
+    margin-top: 2rem;
+    gap: 0.5rem;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.footer-recursos a {
+    font-weight: 400;
+    color: var(--color-teal-muy-clarito);
+}
+
+.footer-cada-recurso {
+    padding: 0.5rem;
+}
+
+/* contenedor de los iconos */
+.footer-socialmedia-icons {
+    display: flex;
+    justify-content: center;
+    color: var(--color-data-bases);
+    padding-bottom: 1rem;
+}
+
+.footer-icons {
+    color: var(--color-teal-muy-clarito);
+    margin: 1rem;
+    size: 3rem;
+}
+
+.footer-color-icons {
+    color: var(--color-teal-muy-clarito);
+}
+
+.footer-signature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*-------------------------
     @MEDIA TABLETS
@@ -516,7 +560,6 @@ a, .link-style {
 
     .ico-quote {
         margin-bottom: 35px;
-        height: 90px;
     }
 
     /*--------------------------------
@@ -525,11 +568,12 @@ a, .link-style {
 
     /* -- CAJA DE TARJETAS -- */
     .contenedor-skills {
-        width: 100%;
+        width: 80%;
     }
 
     .texto-skills {
         padding: 10px 100px;
+        white-space: wrap;
     }
 
     /*--------------------------------
@@ -632,6 +676,10 @@ a, .link-style {
         font-size: 16px;
     }
 
+    .p-titulo-skills {
+        white-space: wrap;
+    }
+
     /*--------------------------------
             SECCIÓN QUOTE
     ----------------------------------*/
@@ -645,7 +693,6 @@ a, .link-style {
 
     .ico-quote {
         margin-bottom: 20px;
-        height: 60px;
     }
 
     /*--------------------------------
@@ -754,14 +801,10 @@ a, .link-style {
     ----------------------------------*/
 
     /* -- CAJA DE TARJETAS -- */
-    .contenedor-skills {
-        width: 70%;
-    }
 
     /* -- CAJA DE CADA TARJETA -- */
     .skills {
-        width: 300px;
-        height: 269px;
+        width: 18%;
     }
 
     .texto-skills {
@@ -787,7 +830,6 @@ a, .link-style {
 
     .ico-quote {
         margin-bottom: 35px;
-        height: 100px;
     }
 
     /*--------------------------------

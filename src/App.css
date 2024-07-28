@@ -257,10 +257,6 @@ a, .link-style {
     justify-content: center;
 }
 
-.texto-skills {
-    padding: 10px 220px;
-}
-
 .h2-skills {
     margin-top: 100px;
 }
@@ -571,9 +567,13 @@ a, .link-style {
         width: 80%;
     }
 
-    .texto-skills {
+    .skills {
+        min-width: 135px;
+        max-width: 155px;
+    }
+
+    .p-titulo-skills {
         padding: 10px 100px;
-        white-space: wrap;
         font-size: 16px;
     }
 
@@ -682,14 +682,9 @@ a, .link-style {
         height: auto;
     }
 
-    .texto-skills {
-        padding: 10px 10px;
-        margin: 10px;
-        font-size: 14px;
-    }
-
     .p-titulo-skills {
         white-space: wrap;
+        font-size: 16px;
     }
 
     /*--------------------------------
@@ -819,9 +814,8 @@ a, .link-style {
         width: 18%;
     }
 
-    .texto-skills {
+    .p-titulo-skills {
         font-size: 22px;
-        padding: 40px 330px 5px;
     }
 
     /*--------------------------------

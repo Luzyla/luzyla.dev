@@ -670,6 +670,15 @@ a, .link-style {
         padding: 5px;
     }
 
+    .skills {
+        width: 35%;
+    }
+
+    .img-skills {
+        width: 90%;
+        height: auto;
+    }
+
     .texto-skills {
         padding: 10px 10px;
         margin: 10px;

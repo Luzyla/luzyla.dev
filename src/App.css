@@ -243,9 +243,9 @@ a, .link-style {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .img-skills {
@@ -574,6 +574,7 @@ a, .link-style {
     .texto-skills {
         padding: 10px 100px;
         white-space: wrap;
+        font-size: 16px;
     }
 
     /*--------------------------------
@@ -667,12 +668,13 @@ a, .link-style {
     /* -- CAJA DE TARJETAS -- */
     .contenedor-skills {
         width: 100%;
-        padding: 5px;
+        padding: 0.3rem;
     }
 
     .skills {
-        width: 35%;
-        min-width: 125px;
+        width: 40%;
+        min-width: 135px;
+        margin: 0.3rem;
     }
 
     .img-skills {
@@ -683,7 +685,7 @@ a, .link-style {
     .texto-skills {
         padding: 10px 10px;
         margin: 10px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .p-titulo-skills {

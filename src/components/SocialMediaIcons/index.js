@@ -30,9 +30,13 @@ const dataSocialMedias = [
   },
 ];
 
-export function SocialMediaIcons() {
+export function SocialMediaIcons({ classNameContainer, colorIcon, sizeIcon, classNameIcon}) {
+  const claseContainer = classNameContainer || "contenedor-icon-socialmedia";
+  const claseColorIcono = colorIcon || "#007b67";
+  const claseIconSize = sizeIcon || "2.5rem";
+const claseIcon = classNameIcon || "icon-socialmedia";
   return (
-    <div className="contenedor-icon-socialmedia">
+    <div className={claseContainer}>
       {dataSocialMedias.map((socialmedia) => (
         <Link
           url={socialmedia.url}
@@ -43,9 +47,9 @@ export function SocialMediaIcons() {
           <Icon
             component={socialmedia.icon}
             title={socialmedia.iconTitle}
-            size="2.5rem"
-            color="#007b67"
-            className="icon-socialmedia"
+            size={claseIconSize}
+            color={claseColorIcono}
+            className={claseIcon}
           ></Icon>
         </Link>
       ))}

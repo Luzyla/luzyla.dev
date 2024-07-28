@@ -426,6 +426,7 @@ a, .link-style {
 .menu-footer {
     font-size: 14px;
     color: #00dfc0;
+    color: var(--color-teal-muy-clarito);
 }
 
 .emoji-size {
@@ -470,11 +471,35 @@ a, .link-style {
 
 .footer-recursos a {
     font-weight: 400;
-    color: var(--color-data-bases);
+    color: var(--color-teal-muy-clarito);
 }
 
 .footer-cada-recurso {
     padding: 0.5rem;
+}
+
+/* contenedor de los iconos */
+.footer-socialmedia-icons {
+    display: flex;
+    justify-content: center;
+    color: var(--color-data-bases);
+    padding-bottom: 1rem;
+}
+
+.footer-icons {
+    color: var(--color-teal-muy-clarito);
+    margin: 1rem;
+    size: 3rem;
+}
+
+.footer-color-icons {
+    color: var(--color-teal-muy-clarito);
+}
+
+.footer-signature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*-------------------------

@@ -4,7 +4,7 @@ import Emoji from "a11y-react-emoji/lib/Emoji";
 
 export function Signature() {
   return (
-    <div>
+    <div className="footer-signature-container">
       <p className="amor">
         Hecho con <Emoji symbol="❤️" label="corazón" /> y mucho{" "}
         <Emoji symbol="🧉" label="matecito" /> por{" "}

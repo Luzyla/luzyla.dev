@@ -30,13 +30,29 @@ const dataSocialMedias = [
   },
 ];
 
+/* 
+Para Proyectos:
+import { FaInfoCircle } from "react-icons/fa";
+<FaInfoCircle />
+
+import { TbWorldWww } from "react-icons/tb";
+<TbWorldWww />
+import { FaLink } from "react-icons/fa";
+<FaLink />
+
+import { FaGithub } from "react-icons/fa6";
+<FaGithub />
+import { GrGithub } from "react-icons/gr";
+<GrGithub />
+
+import { FaShareAlt } from "react-icons/fa";
+<FaShareAlt />
+
+*/
+
 export function SocialMediaIcons({ classNameContainer, colorIcon, sizeIcon, classNameIcon}) {
-  const claseContainer = classNameContainer || "contenedor-icon-socialmedia";
-  const claseColorIcono = colorIcon || "#007b67";
-  const claseIconSize = sizeIcon || "2.5rem";
-const claseIcon = classNameIcon || "icon-socialmedia";
   return (
-    <div className={claseContainer}>
+    <div className={classNameContainer}>
       {dataSocialMedias.map((socialmedia) => (
         <Link
           url={socialmedia.url}
@@ -47,12 +63,19 @@ const claseIcon = classNameIcon || "icon-socialmedia";
           <Icon
             component={socialmedia.icon}
             title={socialmedia.iconTitle}
-            size={claseIconSize}
-            color={claseColorIcono}
-            className={claseIcon}
+            size={sizeIcon}
+            color={colorIcon}
+            className={classNameIcon}
           ></Icon>
         </Link>
       ))}
     </div>
   );
+}
+
+SocialMediaIcons.defaultProps = {
+  classNameContainer: 'contenedor-icon-socialmedia',
+  colorIcon: "#007b67",
+  sizeIcon: "2.5rem",
+  classNameIcon: "icon-socialmedia",
 }

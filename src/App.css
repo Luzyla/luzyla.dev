@@ -243,9 +243,9 @@ a, .link-style {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .img-skills {
@@ -255,10 +255,6 @@ a, .link-style {
 
 .logos-skills {
     justify-content: center;
-}
-
-.texto-skills {
-    padding: 10px 220px;
 }
 
 .h2-skills {
@@ -571,9 +567,14 @@ a, .link-style {
         width: 80%;
     }
 
-    .texto-skills {
+    .skills {
+        min-width: 135px;
+        max-width: 155px;
+    }
+
+    .p-titulo-skills {
         padding: 10px 100px;
-        white-space: wrap;
+        font-size: 16px;
     }
 
     /*--------------------------------
@@ -667,17 +668,23 @@ a, .link-style {
     /* -- CAJA DE TARJETAS -- */
     .contenedor-skills {
         width: 100%;
-        padding: 5px;
+        padding: 0.3rem;
     }
 
-    .texto-skills {
-        padding: 10px 10px;
-        margin: 10px;
-        font-size: 16px;
+    .skills {
+        width: 40%;
+        min-width: 135px;
+        margin: 0.3rem;
+    }
+
+    .img-skills {
+        width: 90%;
+        height: auto;
     }
 
     .p-titulo-skills {
         white-space: wrap;
+        font-size: 16px;
     }
 
     /*--------------------------------
@@ -807,9 +814,8 @@ a, .link-style {
         width: 18%;
     }
 
-    .texto-skills {
+    .p-titulo-skills {
         font-size: 22px;
-        padding: 40px 330px 5px;
     }
 
     /*--------------------------------

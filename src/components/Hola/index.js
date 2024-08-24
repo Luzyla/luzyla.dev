@@ -11,7 +11,7 @@ export function Hola() {
           <h3>¡Hola! Soy</h3>
           <h1>Lucila Di Lorenzo</h1>
           <p className="p-hola">
-            Desarrolladora FrontEnd, Scrum Master y curiosa por naturaleza!
+          Programadora FrontEnd con más de 3 años en desarrollo web y 9 años en proyectos IT. Combino mi pasión por la tecnología con habilidades en gestión y creación de interfaces atractivas. ¡¿Conversamos?!
           </p>
 
           <ul className="button-section">

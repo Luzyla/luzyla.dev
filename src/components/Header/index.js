@@ -23,7 +23,7 @@ export function Header() {
   }, []);
 
   return (
-    <header className="App-header">
+    <header className="App-header header-fixed">
       <nav
         className={`${isMobile ? "nav-header" : "nav-header"} ${
           showMenu ? "menu-desplegado" : ""

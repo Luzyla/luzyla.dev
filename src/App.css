@@ -1,53 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 
 :root {
-    --color-pc: #009c86;
-    /*pc*/
-    --color-pad: #007b67;
-    /* rgb(0,123,103); 006754; /*pad*/
-    --color-pantalla: #607b82;
-    /* rgb(96,123,130); /*pantalla*/
-    --color-iconos-laterales: #00dfc0;
-    /* rgb(0,223,192); /*iconos laterales*/
-    --color-data-bases: #d3faf5;
-    /*data bases*/
-    --color-violeta-complementario: #483d8b;
-    /*violeta complementario*/
-    --color-verde: rgb(0, 128, 128);
-    --color-verde-oscuro: rgb(19, 81, 68);
-    /*verde oscuro*/
-    --color-gris-oscuro: rgb(64, 81, 85);
-    /*gris oscuro*/
-    --color-teal-muy-clarito: #a8f0df;
-    /*teal muy clarito*/
+  --color-pc: #009c86;
+  /*pc*/
+  --color-pad: #007b67;
+  /* rgb(0,123,103); 006754; /*pad*/
+  --color-pantalla: #607b82;
+  /* rgb(96,123,130); /*pantalla*/
+  --color-iconos-laterales: #00dfc0;
+  /* rgb(0,223,192); /*iconos laterales*/
+  --color-data-bases: #d3faf5;
+  /*data bases*/
+  --color-violeta-complementario: #483d8b;
+  /*violeta complementario*/
+  --color-verde: rgb(0, 128, 128);
+  --color-verde-oscuro: rgb(19, 81, 68);
+  /*verde oscuro*/
+  --color-gris-oscuro: rgb(64, 81, 85);
+  /*gris oscuro*/
+  --color-teal-muy-clarito: #a8f0df;
+  /*teal muy clarito*/
 }
 
 html {
-    scroll-behavior: smooth;
-    scrollbar-color: #009c86 #fafafa;
-    scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: #009c86 #fafafa;
+  scrollbar-width: thin;
 }
 
 body {
-    color: #2e2e31;
-    font-family: 'Montserrat', 'sans serif';
-
+  color: #2e2e31;
+  font-family: "Montserrat", "sans serif";
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    background-color: #ffffff;
-    padding: 20px 0;
-    width: 100%;
-    justify-content: flex-end;
-    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
-
+  background-color: #ffffff;
+  padding: 20px 0;
+  width: 100%;
+  justify-content: flex-end;
+  box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
 }
 
 /*-------------------------
@@ -55,113 +53,135 @@ header {
 -------------------------*/
 
 p {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
-h1, h3 {
-    text-align: left;
+h1,
+h3 {
+  text-align: left;
 }
 
 h1 {
-    font-family: 'Allura';
-    font-weight: 900;
-    font-size: 75px;
-    color: #009c86;
-    text-shadow: 2px 2px 4px #42424280;
+  font-family: "Allura";
+  font-weight: 900;
+  font-size: 75px;
+  color: #009c86;
+  text-shadow: 2px 2px 4px #42424280;
 }
 
-h2, h3 {
-    font-weight: 900;
+h2,
+h3 {
+  font-weight: 900;
 }
 
 h2 {
-    font-size: 45px;
-    text-align: center;
+  font-size: 45px;
+  text-align: center;
 }
 
 h3 {
-    font-size: 30px;
-    color: #424242;
-    margin: 90px 0 10px 0;
+  font-size: 30px;
+  color: #424242;
+  margin: 90px 0 10px 0;
 }
 
 /*--------------------------------
         NAV BAR GENERAL
 ----------------------------------*/
-ul, .list-style {
-    list-style-type: none;
-    align-items: flex-end;
+ul,
+.list-style {
+  list-style-type: none;
+  align-items: flex-end;
 }
 
-a, .link-style {
-    text-decoration: none;
-    transition: transform 0.4s;
-    font-weight: bold;
+a,
+.link-style {
+  text-decoration: none;
+  transition: transform 0.4s;
+  font-weight: bold;
 }
 
 .link-style:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /*--------------------------------
         NAV BAR HEADER
 ----------------------------------*/
-.nav-header {
-    margin-right: 10%;
-    color: var(--color-pantalla);
+.header-fixed {
+  position: fixed;
 }
 
-.menu-header, .menu-proyectos, .menu-footer {
-    margin: 10px;
-    padding: 10px;
+.nav-header {
+  margin-right: 10%;
+  color: var(--color-pantalla);
+}
+
+.menu-header,
+.menu-proyectos,
+.menu-footer {
+  margin: 10px;
+  padding: 10px;
 }
 
 .icono-burger {
-    display: block;
-    font-size: 30px;
-    color: #007b67;
-    margin: 10px 0;
+  display: block;
+  font-size: 30px;
+  color: #007b67;
+  margin: 10px 0;
 }
 
 .button {
-    background-color: #007b67;
-    border-radius: 25px;
-    color: #d3faf5;
-    padding: 10px 40px;
-    font-weight: bold;
+  background-color: #007b67;
+  border-radius: 25px;
+  color: #d3faf5;
+  padding: 10px 40px;
+  font-weight: bold;
 }
 
 /*--------------------------------
     MENU DESPLEGABLE MOBILE
 ----------------------------------*/
 .contenedor-barra-mobile {
-    display: flex;
-    z-index: 1;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    transition: 1s;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  transition: 1s;
 }
 
 .barra-mobile {
-    background-color: rgba(250, 250, 250, 0.6);
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+  background-color: rgba(250, 250, 250, 0.6);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 .menu-desplegado {
-    right: 0;
-    top: 0;
+  right: 0;
+  top: 0;
 }
 
 /*--------------------------------
         DISPLAY FLEX
 ----------------------------------*/
 
-.seccion-hola, .contenedor-hola, .botonera-proyectos, ul, nav, .seccion-quote, .div-quote, .contenedor-proyectos, .seccion-footer, .div-contacto, header, .contenedor-skills, .seccion-skills {
-    display: flex;
+.seccion-hola,
+.contenedor-hola,
+.botonera-proyectos,
+ul,
+nav,
+.seccion-quote,
+.div-quote,
+.contenedor-proyectos,
+.seccion-footer,
+.div-contacto,
+header,
+.contenedor-skills,
+.seccion-skills {
+  display: flex;
 }
 
 /*--------------------------------
@@ -169,45 +189,46 @@ a, .link-style {
 ----------------------------------*/
 
 .seccion-hola {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
 }
 
 .contenedor-hola {
-    width: 90%;
-    padding: 90px 30px 100px 30px;
+  width: 90%;
+  padding: 90px 30px 100px 30px;
 }
 
 .texto-hola {
-    width: 60%;
-    padding: 30px;
+  width: 60%;
+  padding: 30px;
 }
 
 .img-hola {
-    width: 40%;
+  width: 40%;
 }
 
 .p-hola {
-    text-align: left;
-    color: #607b82;
-    margin: 16px 0 40px 0;
+  text-align: left;
+  color: #607b82;
+  margin: 16px 0 40px 0;
 }
 
 .hola-link {
-    padding: 10px 40px;
-    margin: 4px;
+  padding: 10px 40px;
+  margin: 4px;
 }
 
 .contenedor-icon-socialmedia {
-    display: flex;
-    margin: 1rem;
+  display: flex;
+  margin: 1rem;
 }
 
 .icon-socialmedia {
-    margin-right: 3rem;
-    align-self: center;
-    white-space: nowrap;
-    /* ^^^ el texto del boton queda siempre en la misma línea */
+  margin-right: 2rem;
+  align-self: center;
+  white-space: nowrap;
+  /* ^^^ el texto del boton queda siempre en la misma línea */
 }
 
 /*--------------------------------
@@ -215,680 +236,688 @@ a, .link-style {
 ----------------------------------*/
 
 .seccion-skills {
-    background-color: #d3faf540;
-    padding: 45px;
-    align-items: center;
-    flex-direction: column;
+  background-color: #d3faf540;
+  padding: 45px;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* -- CAJA DE TARJETAS -- */
 .contenedor-skills {
-    width: 80%;
-    margin-top: 40px;
-    padding: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
+  width: 80%;
+  margin-top: 40px;
+  padding: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* -- CAJA DE CADA TARJETA -- */
 .skills {
-    background-color: #fafafa;
-    border: 1px #dddfe5 solid;
-    border-radius: 10px;
-    width: 30%;
-    margin: 0.5rem;
-    padding: 2rem;
-    color: #2e2e31;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+  background-color: #fafafa;
+  border: 1px #dddfe5 solid;
+  border-radius: 10px;
+  width: 30%;
+  margin: 0.5rem;
+  padding: 2rem;
+  color: #2e2e31;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .img-skills {
-    width: 65%;
-    height: auto;
+  width: 65%;
+  height: auto;
 }
 
 .logos-skills {
-    justify-content: center;
+  justify-content: center;
 }
 
 .h2-skills {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .p-titulo-skills {
-    font-weight: 700;
-    font-size: 20px;
-    white-space: nowrap;
-    padding-top: 1rem;
-    margin: 20px 0 0 0;
+  font-weight: 700;
+  font-size: 20px;
+  white-space: nowrap;
+  padding-top: 1rem;
+  margin: 20px 0 0 0;
 }
 
 /*--------------------------------
         SECCIÓN QUOTE
 ----------------------------------*/
 .seccion-quote {
-    background: rgb(0, 223, 192);
-    background: linear-gradient(180deg, rgba(0, 223, 192, 1) 0%, rgba(27, 70, 61, 1) 94%, rgba(33, 60, 56, 1) 100%);
-    color: #fafafa;
-    padding: 100px 40px 100px;
-    justify-content: center;
-    height: 100%;
+  background: rgb(0, 223, 192);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 223, 192, 1) 0%,
+    rgba(27, 70, 61, 1) 94%,
+    rgba(33, 60, 56, 1) 100%
+  );
+  color: #fafafa;
+  padding: 100px 40px 100px;
+  justify-content: center;
+  height: 100%;
 }
 
 .div-quote {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .p-quote {
-    font-family: 'Allura';
-    font-size: 35px;
-    margin: 10px 100px;
+  font-family: "Allura";
+  font-size: 35px;
+  margin: 10px 100px;
 }
 
 .h3-quote {
-    font-family: 'Allura';
-    font-size: 60px;
-    color: #fafafa;
-    padding-bottom: 20px;
-    font-weight: normal;
+  font-family: "Allura";
+  font-size: 60px;
+  color: #fafafa;
+  padding-bottom: 20px;
+  font-weight: normal;
 }
 
 .img-quote {
-    width: 15%;
-    padding-bottom: 80px;
+  width: 15%;
+  padding-bottom: 80px;
 }
 
 .ico-quote {
-    margin-bottom: 35px;
-    width: 4em;
-    height: 3.5rem;
+  margin-bottom: 35px;
+  width: 4em;
+  height: 3.5rem;
 }
 
 .ico-mobile {
-    width: 2em;
+  width: 2em;
 }
 
 .ico-bigscreen {
-    width: 6em;
+  width: 6em;
 }
 
 /*--------------------------------
         SECCIÓN PROYECTOS
 ----------------------------------*/
 .seccion-proyectos {
-    background-color: #d3faf526;
-    padding: 45px;
+  background-color: #d3faf526;
+  padding: 45px;
 }
 
 /* -- MENÚ -- */
 .botonera-proyectos {
-    justify-content: center;
-    padding: 20px 0;
-    margin: 20px auto 10px auto;
+  justify-content: center;
+  padding: 20px 0;
+  margin: 20px auto 10px auto;
 }
 
 .menu-proyectos {
-    font-size: 16px;
-    background-color: #d3faf526;
-    border: none;
-    padding: 15px 40px;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: 0.4s;
+  font-size: 16px;
+  background-color: #d3faf526;
+  border: none;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.4s;
 }
 
 .menu-proyectos:hover {
-    background-color: #007b67;
-    border-radius: 25px;
-    color: #d3faf5;
-    padding: 10px 40px;
-    cursor: pointer;
+  background-color: #007b67;
+  border-radius: 25px;
+  color: #d3faf5;
+  padding: 10px 40px;
+  cursor: pointer;
 }
 
 .buttonClicked {
-    background-color: #007b67;
-    border-radius: 25px;
-    color: #d3faf5;
+  background-color: #007b67;
+  border-radius: 25px;
+  color: #d3faf5;
 }
 
 .menu-proyectos:focus {
-    background-color: #007b67;
-    border-radius: 25px;
-    color: #d3faf5;
+  background-color: #007b67;
+  border-radius: 25px;
+  color: #d3faf5;
 }
 
 /* -- CAJA DE TARJETAS -- */
 .contenedor-proyectos {
-    display: flex;
-    margin-top: 40px;
-    padding: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  margin-top: 40px;
+  padding: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* -- CAJA DE CADA TARJETA -- */
 .proyectos {
-    background-color: #fafafa;
-    border: 1px #dddfe5 solid;
-    border-radius: 10px;
-    width: 330px;
-    height: 287px;
-    margin: 10px;
-    padding: 30px;
-    color: #2e2e31;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fafafa;
+  border: 1px #dddfe5 solid;
+  border-radius: 10px;
+  width: 330px;
+  height: 287px;
+  margin: 10px;
+  padding: 30px;
+  color: #2e2e31;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img-proyectos {
-    margin: 5px 35px 5px 35px;
-    object-position: center;
+  margin: 5px 35px 5px 35px;
+  object-position: center;
 }
 
 .h2-proyectos {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .p-titulo-proyectos {
-    font-weight: 700;
-    font-size: 16px;
-    margin-top: 0;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 0;
 }
 
 /*--------------------------------
             FOOTER
 ----------------------------------*/
 .seccion-footer {
-    background-color: #009c86;
-    padding: 45px;
-    flex-direction: column;
+  background-color: #009c86;
+  padding: 45px;
+  flex-direction: column;
 }
 
 /* -- MENÚ -- */
 .nav-footer {
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    margin: 10px auto 10px auto;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  margin: 10px auto 10px auto;
 }
 
 .menu-footer {
-    font-size: 14px;
-    color: #00dfc0;
-    color: var(--color-teal-muy-clarito);
+  font-size: 14px;
+  color: #00dfc0;
+  color: var(--color-teal-muy-clarito);
 }
 
 .emoji-size {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 /* -- LOGOS -- */
 .div-contacto {
-    justify-content: center;
+  justify-content: center;
 }
 
 .img-contacto {
-    width: 80px;
-    padding: 10px;
-    margin: 10px;
-    transition: 0.3s;
+  width: 80px;
+  padding: 10px;
+  margin: 10px;
+  transition: 0.3s;
 }
 
 /* -- TEXTO -- */
 .span-footer {
-    color: #fafafa;
-    cursor: pointer;
+  color: #fafafa;
+  cursor: pointer;
 }
 
 .span-footer a {
-    color: #fafafa;
+  color: #fafafa;
 }
 
 .amor {
-    color: #00dfc0;
-    font-size: 18px;
+  color: #00dfc0;
+  font-size: 18px;
 }
 
 .footer-recursos {
-    font-size: 9px;
-    margin-top: 2rem;
-    gap: 0.5rem;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+  font-size: 9px;
+  margin-top: 2rem;
+  gap: 0.5rem;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-recursos a {
-    font-weight: 400;
-    color: var(--color-teal-muy-clarito);
+  font-weight: 400;
+  color: var(--color-teal-muy-clarito);
 }
 
 .footer-cada-recurso {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 /* contenedor de los iconos */
 .footer-socialmedia-icons {
-    display: flex;
-    justify-content: center;
-    color: var(--color-data-bases);
-    padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  color: var(--color-data-bases);
+  padding-bottom: 1rem;
 }
 
 .footer-icons {
-    color: var(--color-teal-muy-clarito);
-    margin: 1rem;
-    size: 3rem;
+  color: var(--color-teal-muy-clarito);
+  margin: 1rem;
+  size: 3rem;
 }
 
 .footer-color-icons {
-    color: var(--color-teal-muy-clarito);
+  color: var(--color-teal-muy-clarito);
 }
 
 .footer-signature-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*-------------------------
     @MEDIA TABLETS
 -------------------------*/
 @media (min-width: 600px) and (max-width: 900px) {
-
-    /*--------------------------------
+  /*--------------------------------
             NAV BAR HEADER
     ----------------------------------*/
 
-    .nav-header {
-        margin-right: 5%;
-    }
+  .nav-header {
+    margin-right: 5%;
+  }
 
-    .menu-header {
-        font-size: 16px;
-    }
+  .menu-header {
+    font-size: 16px;
+  }
 
-    /*--------------------------------
+  /*--------------------------------
             SECCIÓN HOLA
     ----------------------------------*/
 
-    .seccion-hola, .contenedor-hola, .texto-hola, .texto-hola ul {
-        justify-content: center;
-        align-items: center;
-    }
+  .seccion-hola,
+  .contenedor-hola,
+  .texto-hola,
+  .texto-hola ul {
+    justify-content: center;
+    align-items: center;
+  }
 
-    .contenedor-hola {
-        flex-wrap: wrap;
-    }
+  .contenedor-hola {
+    flex-wrap: wrap;
+  }
 
-    .texto-hola {
-        padding: 5px;
-        width: 100vw;
-    }
+  .texto-hola {
+    padding: 5px;
+    width: 100vw;
+  }
 
-    .img-hola {
-        width: 70%;
-        margin-top: 20px;
-    }
+  .img-hola {
+    width: 70%;
+    margin-top: 20px;
+  }
 
-    /*-------------------------
+  /*-------------------------
             TEXTOS
     -------------------------*/
 
-    .p-hola, h1, h3 {
-        text-align: center;
-    }
+  .p-hola,
+  h1,
+  h3 {
+    text-align: center;
+  }
 
-    h1 {
-        font-size: 72px;
-    }
+  h1 {
+    font-size: 72px;
+  }
 
-    h3 {
-        font-size: 25px;
-    }
+  h3 {
+    font-size: 25px;
+  }
 
-    .ico-quote {
-        margin-bottom: 35px;
-    }
+  .ico-quote {
+    margin-bottom: 35px;
+  }
 
-    /*--------------------------------
+  /*--------------------------------
             SECCIÓN SKILLS
     ----------------------------------*/
 
-    /* -- CAJA DE TARJETAS -- */
-    .contenedor-skills {
-        width: 80%;
-    }
+  /* -- CAJA DE TARJETAS -- */
+  .contenedor-skills {
+    width: 80%;
+  }
 
-    .skills {
-        min-width: 135px;
-        max-width: 155px;
-    }
+  .skills {
+    min-width: 135px;
+    max-width: 155px;
+  }
 
-    .p-titulo-skills {
-        padding: 10px 100px;
-        font-size: 16px;
-    }
+  .p-titulo-skills {
+    padding: 10px 100px;
+    font-size: 16px;
+  }
 
-    /*--------------------------------
+  /*--------------------------------
             SECCIÓN PROYECTOS
     ----------------------------------*/
 
-    /* -- CAJA DE TARJETAS -- */
+  /* -- CAJA DE TARJETAS -- */
 
-    .contenedor-proyectos {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
+  .contenedor-proyectos {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /*-------------------------
     @MEDIA CELULARES
 -------------------------*/
 @media (max-width: 599px) {
-
-    /*--------------------------------
+  /*--------------------------------
             NAV BAR HEADER
     ----------------------------------*/
 
-    #ul-header {
-        display: none;
-    }
+  #ul-header {
+    display: none;
+  }
 
-    .icono-burger {
-        display: block;
-        font-size: 30px;
-        color: #007b67;
-    }
+  .icono-burger {
+    display: block;
+    font-size: 30px;
+    color: #007b67;
+  }
 
-    /*--------------------------------
+  /*--------------------------------
             SECCIÓN HOLA
     ----------------------------------*/
 
-    .seccion-hola, .contenedor-hola, .texto-hola, .texto-hola ul {
-        justify-content: center;
-        align-items: center;
-    }
+  .seccion-hola,
+  .contenedor-hola,
+  .texto-hola,
+  .texto-hola ul {
+    justify-content: center;
+    align-items: center;
+  }
 
-    .contenedor-hola {
-        flex-wrap: wrap;
-        margin-top: 0;
-        padding: 0 0 30px 0;
-    }
+  .contenedor-hola {
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding: 0 0 30px 0;
+  }
 
-    .texto-hola {
-        padding: 5px;
-        width: 100vw;
-    }
+  .texto-hola {
+    padding: 5px;
+    width: 100vw;
+  }
 
-    .img-hola {
-        width: 70%;
-        margin: 20px;
-    }
+  .img-hola {
+    width: 70%;
+    margin: 20px;
+  }
 
-    .p-hola, h1, h3 {
-        text-align: center;
-    }
+  .p-hola,
+  h1,
+  h3 {
+    text-align: center;
+  }
 
-    .button-section {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 1.5rem;
-        padding-left: 1.5rem;
-    }
+  .button-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
+  }
 
-    /*--------------------------------
+  /*--------------------------------
             TEXTOS
     ----------------------------------*/
 
-    h1 {
-        font-size: 60px;
-    }
+  h1 {
+    font-size: 60px;
+  }
 
-    h3 {
-        font-size: 20px;
-    }
+  h3 {
+    font-size: 20px;
+  }
 
-    h2 {
-        font-size: 30px;
-    }
+  h2 {
+    font-size: 30px;
+  }
 
-    /*--------------------------------
+  /*--------------------------------
             SECCIÓN SKILLS
     ----------------------------------*/
 
-    /* -- CAJA DE TARJETAS -- */
-    .contenedor-skills {
-        width: 100%;
-        padding: 0.3rem;
-    }
+  /* -- CAJA DE TARJETAS -- */
+  .contenedor-skills {
+    width: 100%;
+    padding: 0.3rem;
+  }
 
-    .skills {
-        width: 40%;
-        min-width: 135px;
-        margin: 0.3rem;
-    }
+  .skills {
+    width: 40%;
+    min-width: 135px;
+    margin: 0.3rem;
+  }
 
-    .img-skills {
-        width: 90%;
-        height: auto;
-    }
+  .img-skills {
+    width: 90%;
+    height: auto;
+  }
 
-    .p-titulo-skills {
-        white-space: wrap;
-        font-size: 16px;
-    }
+  .p-titulo-skills {
+    white-space: wrap;
+    font-size: 16px;
+  }
 
-    /*--------------------------------
+  /*--------------------------------
             SECCIÓN QUOTE
     ----------------------------------*/
-    .p-quote {
-        margin: 10px 50px;
-    }
+  .p-quote {
+    margin: 10px 50px;
+  }
 
-    .h3-quote {
-        font-size: 50px;
-    }
+  .h3-quote {
+    font-size: 50px;
+  }
 
-    .ico-quote {
-        margin-bottom: 20px;
-    }
+  .ico-quote {
+    margin-bottom: 20px;
+  }
 
-    /*--------------------------------
+  /*--------------------------------
             SECCIÓN PROYECTOS
     ----------------------------------*/
-    .seccion-proyectos {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+  .seccion-proyectos {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-    .botonera-proyectos {
-        padding-top: 10px;
-        padding-bottom: 0;
-        flex-wrap: wrap;
-    }
+  .botonera-proyectos {
+    padding-top: 10px;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+  }
 
-    /* -- MENÚ -- */
-    .menu-proyectos {
-        font-size: 14px;
-    }
+  /* -- MENÚ -- */
+  .menu-proyectos {
+    font-size: 14px;
+  }
 
-    /* -- CAJA DE TARJETAS -- */
-    .contenedor-proyectos {
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 5px;
-    }
+  /* -- CAJA DE TARJETAS -- */
+  .contenedor-proyectos {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5px;
+  }
 
-    /* -- CAJA DE CADA TARJETA -- */
-    .proyectos {
-        width: 230px;
-        height: 230px;
-        margin: 10px;
-        padding: 10px;
-    }
+  /* -- CAJA DE CADA TARJETA -- */
+  .proyectos {
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    padding: 10px;
+  }
 
-    /*--------------------------------
+  /*--------------------------------
                 FOOTER
     ----------------------------------*/
-    /* -- MENÚ -- */
-    .nav-footer {
-        display: none
-    }
+  /* -- MENÚ -- */
+  .nav-footer {
+    display: none;
+  }
 
-    .img-contacto {
-        width: 55px;
-    }
+  .img-contacto {
+    width: 55px;
+  }
 
-    .amor {
-        font-size: 14px;
-    }
-
+  .amor {
+    font-size: 14px;
+  }
 }
 
 /*-------------------------
     @MEDIA GRANDES PANTALLAS
 -------------------------*/
 @media (min-width: 1400px) {
-
-    /*-------------------------
+  /*-------------------------
             TEXTOS
     -------------------------*/
-    h1 {
-        font-size: 80px;
-    }
+  h1 {
+    font-size: 80px;
+  }
 
-    h2 {
-        font-size: 50px;
-    }
+  h2 {
+    font-size: 50px;
+  }
 
-    h3 {
-        font-size: 35px;
-        margin-top: 150px;
-    }
+  h3 {
+    font-size: 35px;
+    margin-top: 150px;
+  }
 
-    /*--------------------------------
+  /*--------------------------------
             NAV BAR GENERAL
     ----------------------------------*/
 
-    /*--------------------------------
+  /*--------------------------------
             NAV BAR HEADER
     ----------------------------------*/
 
-    /*--------------------------------
+  /*--------------------------------
             DISPLAY FLEX
     ----------------------------------*/
 
-    /*--------------------------------
+  /*--------------------------------
             SECCIÓN HOLA
     ----------------------------------*/
 
-    h1 {
-        font-size: 92px;
-    }
+  h1 {
+    font-size: 92px;
+  }
 
-    h3 {
-        font-size: 35px;
-    }
+  h3 {
+    font-size: 35px;
+  }
 
-    .p-hola {
-        font-size: 20px;
-    }
+  .p-hola {
+    font-size: 20px;
+  }
 
-    /*--------------------------------
+  /*--------------------------------
             SECCIÓN SKILLS
     ----------------------------------*/
 
-    /* -- CAJA DE TARJETAS -- */
+  /* -- CAJA DE TARJETAS -- */
 
-    /* -- CAJA DE CADA TARJETA -- */
-    .skills {
-        width: 18%;
-    }
+  /* -- CAJA DE CADA TARJETA -- */
+  .skills {
+    width: 18%;
+  }
 
-    .p-titulo-skills {
-        font-size: 22px;
-    }
+  .p-titulo-skills {
+    font-size: 22px;
+  }
 
-    /*--------------------------------
+  /*--------------------------------
             SECCIÓN QUOTE
     ----------------------------------*/
-    .seccion-quote {
-        padding: 250px 40px;
-        height: 1080px;
-    }
+  .seccion-quote {
+    padding: 250px 40px;
+    height: 1080px;
+  }
 
-    .p-quote {
-        font-size: 45px;
-    }
+  .p-quote {
+    font-size: 45px;
+  }
 
-    .h3-quote {
-        font-size: 70px;
-    }
+  .h3-quote {
+    font-size: 70px;
+  }
 
-    .ico-quote {
-        margin-bottom: 35px;
-    }
+  .ico-quote {
+    margin-bottom: 35px;
+  }
 
-    /*--------------------------------
+  /*--------------------------------
             SECCIÓN PROYECTOS
     ----------------------------------*/
-    .seccion-proyectos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .seccion-proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .menu-proyectos {
-        font-size: 18px;
-    }
+  .menu-proyectos {
+    font-size: 18px;
+  }
 
-    /* -- CAJA DE TARJETAS -- */
-    .contenedor-proyectos {
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 80%;
+  /* -- CAJA DE TARJETAS -- */
+  .contenedor-proyectos {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+  }
 
-    }
+  /* -- CAJA DE CADA TARJETA -- */
+  .proyectos {
+    width: 370px;
+    height: 327px;
+  }
 
-    /* -- CAJA DE CADA TARJETA -- */
-    .proyectos {
-        width: 370px;
-        height: 327px;
-    }
+  .p-titulo-proyectos {
+    font-size: 18px;
+  }
 
-    .p-titulo-proyectos {
-        font-size: 18px;
-    }
-
-    /*--------------------------------
+  /*--------------------------------
                 FOOTER
     ----------------------------------*/
 
-    .menu-footer {
-        font-size: 18px;
-    }
+  .menu-footer {
+    font-size: 18px;
+  }
 
-    .amor {
-        font-size: 20px;
-    }
+  .amor {
+    font-size: 20px;
+  }
 }
 
 /*-------------------------
     BÚSQUEDAS Y FILTROS
 -------------------------*/
 .hidden {
-    display: none;
+  display: none;
 }
-
 
 /*-------------------------
     PALETA DE COLORES
@@ -897,25 +926,25 @@ a, .link-style {
 /* Armé la paleta de colores simulando una clase, para tener todos los códigos HEX/RGB juntos */
 
 .cupetín-de-colores {
-    color: #009c86;
-    /*pc*/
-    color: #007b67;
-    /* rgb(0,123,103); 006754; /*pad*/
-    color: #607b82;
-    /* rgb(96,123,130); /*pantalla*/
-    color: #00dfc0;
-    /* rgb(0,223,192); /*iconos laterales*/
-    color: #d3faf5;
-    /*data bases*/
-    color: #483d8b;
-    /*violeta complementario*/
-    color: rgb(0, 128, 128);
-    color: rgb(19, 81, 68);
-    /*verde oscuro*/
-    color: rgb(64, 81, 85);
-    /*gris oscuro*/
-    color: #a8f0df;
-    /*teal muy clarito*/
+  color: #009c86;
+  /*pc*/
+  color: #007b67;
+  /* rgb(0,123,103); 006754; /*pad*/
+  color: #607b82;
+  /* rgb(96,123,130); /*pantalla*/
+  color: #00dfc0;
+  /* rgb(0,223,192); /*iconos laterales*/
+  color: #d3faf5;
+  /*data bases*/
+  color: #483d8b;
+  /*violeta complementario*/
+  color: rgb(0, 128, 128);
+  color: rgb(19, 81, 68);
+  /*verde oscuro*/
+  color: rgb(64, 81, 85);
+  /*gris oscuro*/
+  color: #a8f0df;
+  /*teal muy clarito*/
 }
 
 /*-------------------------

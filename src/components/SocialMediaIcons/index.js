@@ -67,6 +67,7 @@ export function SocialMediaIcons({
   colorIcon,
   sizeIcon,
   classNameIcon,
+  classNameIconsTitle,
 }) {
   return (
     <div className={classNameContainer}>
@@ -84,6 +85,7 @@ export function SocialMediaIcons({
             color={colorIcon}
             className={classNameIcon}
           ></Icon>
+          <p className={classNameIconsTitle}>{socialmedia.iconTitle}</p>
         </Link>
       ))}
     </div>
@@ -95,4 +97,5 @@ SocialMediaIcons.defaultProps = {
   colorIcon: "#007b67",
   sizeIcon: "2.5rem",
   classNameIcon: "icon-socialmedia",
+  classNameIconsTitle: "hidden",
 };

@@ -2,9 +2,10 @@ import "./App.css";
 import React from "react";
 import { Header } from "./components/Header";
 import { Hola } from "./components/Hola";
-import { Skills } from "./components/Skills";
-import { Quote } from "./components/Quote";
 import { Proyectos } from "./components/Proyectos";
+import { Quote } from "./components/Quote";
+import { Skills } from "./components/Skills";
+import { Contacto } from "./components/Contacto";
 import { Footer } from "./components/Footer";
 import Meta from "./components/MetaData";
 
@@ -17,6 +18,7 @@ function App() {
       <Proyectos></Proyectos>
       <Quote></Quote>
       <Skills></Skills>
+      <Contacto></Contacto>
       <Footer></Footer>
     </div>
   );

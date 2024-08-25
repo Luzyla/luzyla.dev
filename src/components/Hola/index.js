@@ -14,7 +14,7 @@ export function Hola() {
             Desarrolladora FrontEnd, Scrum Master y curiosa por naturaleza!
           </p>
 
-          <ul className="button-section" id="a-redes">
+          <ul className="button-section">
             <ButtonLink
               url="#a-proyectos"
               className="button"

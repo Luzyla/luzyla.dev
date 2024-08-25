@@ -434,8 +434,9 @@ header,
             CONTACTO
 ----------------------------------*/
 .seccion-contacto {
-  height: 75vh;
+  height: 85vh;
   flex-direction: column;
+  padding: 2rem 0;
 }
 
 .h2-contacto {
@@ -443,28 +444,37 @@ header,
 }
 
 .contenedor-asides {
-  background-color: #d3faf540;
-  border-radius: 30px;
+  background-color: transparent;
+  /* border-radius: 30px; */
   margin: 2rem 9rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  height: 100%;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  padding: 2rem;
 }
-
+/* IMG */
+.contenedor-img-contacto {
+  width: 20vw;
+}
+.contenedor-img-contacto img {
+  width: 100%;
+}
 /* ICONS */
 .contenedor-aside-icons {
-  width: 50vw;
+  /* width: 15vw; */
   display: flex;
   flex-direction: column;
+  order: 3;
 }
+
 .contenedor-iconos-contacto {
   display: flex;
   flex-direction: column;
+  align-items: flex-end; /* mantiene los íconos alineados a la izquierda */
   margin: 0 auto;
 }
 
 .contenedor-iconos-contacto a {
   display: flex;
-  padding: 1rem 0;
+  padding: 1.25rem 0;
 }
 
 .flex-column {
@@ -473,13 +483,20 @@ header,
 }
 
 .icons-title {
-  color: var(--color-pad);
+  color: var(--color-pantalla);
   font-weight: 500;
+  margin: 10px 0;
+  order: 1;
+}
+
+.icons-contact {
+  order: 2;
+  margin-left: 1rem;
 }
 
 /* FORM */
 .contenedor-form {
-  width: 50vw;
+  width: 40vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -493,7 +510,7 @@ header,
   color: var(--color-pad);
   font-weight: 400;
   gap: 1.1rem;
-  padding: 0.2rem;
+  padding-top: 0.2rem;
 }
 
 .campo-form {
@@ -515,6 +532,11 @@ header,
   /* padding: 1rem; */
   color: #2e2e3180;
   font-family: "Montserrat", "sans serif";
+}
+
+.campo-form-button {
+  background-color: var(--color-pc);
+  margin-top: 1.5rem;
 }
 /*--------------------------------
             FOOTER

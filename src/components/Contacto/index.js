@@ -28,21 +28,24 @@ export function Contacto() {
   };
 
   return (
-    <section className="seccion-contacto">
+    <section className="seccion-contacto" id="a-contacto">
+      <h2 className="h2-contacto">Contactame</h2>
       <div className="contenedor-asides">
+        <picture className="contenedor-img-contacto">
+          <img src="../images/contact/Feedback-amico.svg" alt="" />
+        </picture>
         <aside className="contenedor-aside-icons">
-          <h2 className="h2-contacto">Contactame</h2>
           <SocialMediaIcons
             classNameContainer="contenedor-iconos-contacto"
-            /* colorIcon="" */
-            sizeIcon="50px"
-            /* classNameIcon="" */
+            colorIcon="var(--color-pc)"
+            sizeIcon="2.8rem"
+            classNameIcon="icons-contact"
             classNameIconsTitle="icons-title"
           ></SocialMediaIcons>
         </aside>
 
         <div className="contenedor-form">
-          <h2 className="h2-contacto">Escribime</h2>
+          {/* <h2 className="h2-contacto">Escribime</h2> */}
           <form onSubmit={handleSubmit}>
             <label id="nombre" className="etiqueta-form">
               Nombre*:
@@ -85,7 +88,7 @@ export function Contacto() {
             <input
               type="submit"
               value={"ENVIAR"}
-              className="button campo-form"
+              className="button campo-form campo-form-button"
             />
             {sent ? (
               <p className="msg-form-enviado">Formulario enviado con éxito!</p>

@@ -25,7 +25,7 @@ export function NavMenu({ id, classNameBtn, classNameList }) {
         txtButton="PORTFOLIO"
       ></ButtonLink>
       <ButtonLink
-        url="#a-redes"
+        url="#a-contacto"
         className={`${classNameBtn} button`}
         txtButton="CONTACTO"
       ></ButtonLink>

@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "../Link";
-import { FaLinkedin, FaGithub, FaMedium, FaInstagram } from "react-icons/fa6";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaMedium,
+  FaInstagram,
+  FaSpotify,
+} from "react-icons/fa6";
 import { Icon } from "../Icon";
 
 const dataSocialMedias = [
@@ -28,6 +34,12 @@ const dataSocialMedias = [
     icon: FaInstagram,
     iconTitle: "Instagram",
   },
+  {
+    id: 5,
+    url: "https://open.spotify.com/playlist/4IgxTSpDQbDWZ1YTfQkgqf?si=a7d6af49f60c4e89",
+    icon: FaSpotify,
+    iconTitle: "Spotify",
+  },
 ];
 
 /* 
@@ -50,7 +62,12 @@ import { FaShareAlt } from "react-icons/fa";
 
 */
 
-export function SocialMediaIcons({ classNameContainer, colorIcon, sizeIcon, classNameIcon}) {
+export function SocialMediaIcons({
+  classNameContainer,
+  colorIcon,
+  sizeIcon,
+  classNameIcon,
+}) {
   return (
     <div className={classNameContainer}>
       {dataSocialMedias.map((socialmedia) => (
@@ -74,8 +91,8 @@ export function SocialMediaIcons({ classNameContainer, colorIcon, sizeIcon, clas
 }
 
 SocialMediaIcons.defaultProps = {
-  classNameContainer: 'contenedor-icon-socialmedia',
+  classNameContainer: "contenedor-icon-socialmedia",
   colorIcon: "#007b67",
   sizeIcon: "2.5rem",
   classNameIcon: "icon-socialmedia",
-}
+};

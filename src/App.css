@@ -434,21 +434,19 @@ header,
             CONTACTO
 ----------------------------------*/
 .seccion-contacto {
-  height: 85vh;
+  height: 80vh;
   flex-direction: column;
   padding: 2rem 0;
 }
 
 .h2-contacto {
-  margin: 2.5rem 0;
+  margin: 4rem 0 2.5rem;
 }
 
 .contenedor-asides {
-  background-color: transparent;
-  /* border-radius: 30px; */
-  margin: 2rem 9rem;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  padding: 2rem;
+  padding: 3rem 2rem;
+  justify-content: center;
+  align-items: center;
 }
 /* IMG */
 .contenedor-img-contacto {
@@ -459,7 +457,7 @@ header,
 }
 /* ICONS */
 .contenedor-aside-icons {
-  /* width: 15vw; */
+  width: 20vw;
   display: flex;
   flex-direction: column;
   order: 3;
@@ -517,7 +515,7 @@ header,
   width: 25vw;
   margin: 0.5rem;
   border-radius: 25px;
-  height: 50px;
+  min-height: 50px;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 1rem;
@@ -525,7 +523,8 @@ header,
 }
 
 .campo-form-msg {
-  height: 100px;
+  /* height: 100px; */
+  field-sizing: content;
 }
 
 .campo-form::placeholder {

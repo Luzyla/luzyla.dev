@@ -6,6 +6,7 @@ import {
   FaMedium,
   FaInstagram,
   FaSpotify,
+  FaEnvelope,
 } from "react-icons/fa6";
 import { Icon } from "../Icon";
 
@@ -27,6 +28,7 @@ const dataSocialMedias = [
     url: "http://luzyla.medium.com",
     icon: FaMedium,
     iconTitle: "Medium",
+    showInContactMe: true,
   },
   {
     id: 4,
@@ -39,6 +41,14 @@ const dataSocialMedias = [
     url: "https://open.spotify.com/playlist/4IgxTSpDQbDWZ1YTfQkgqf?si=a7d6af49f60c4e89",
     icon: FaSpotify,
     iconTitle: "Spotify",
+    showInContactMe: true,
+  },
+  {
+    id: 6,
+    url: "mailto:coder@luzyla.dev",
+    icon: FaEnvelope,
+    iconTitle: "E-mail",
+    showInContactMe: false,
   },
 ];
 
@@ -68,26 +78,29 @@ export function SocialMediaIcons({
   sizeIcon,
   classNameIcon,
   classNameIconsTitle,
+  contactMe,
 }) {
   return (
     <div className={classNameContainer}>
-      {dataSocialMedias.map((socialmedia) => (
-        <Link
-          url={socialmedia.url}
-          target="_blank"
-          key={socialmedia.id}
-          className={`${socialmedia.className}`}
-        >
-          <Icon
-            component={socialmedia.icon}
-            title={socialmedia.iconTitle}
-            size={sizeIcon}
-            color={colorIcon}
-            className={classNameIcon}
-          ></Icon>
-          <p className={classNameIconsTitle}>{socialmedia.iconTitle}</p>
-        </Link>
-      ))}
+      {dataSocialMedias
+        .filter((i) => i.showInContactMe !== contactMe)
+        .map((socialmedia) => (
+          <Link
+            url={socialmedia.url}
+            target="_blank"
+            key={socialmedia.id}
+            className={`${socialmedia.className}`}
+          >
+            <Icon
+              component={socialmedia.icon}
+              title={socialmedia.iconTitle}
+              size={sizeIcon}
+              color={colorIcon}
+              className={classNameIcon}
+            ></Icon>
+            <p className={classNameIconsTitle}>{socialmedia.iconTitle}</p>
+          </Link>
+        ))}
     </div>
   );
 }

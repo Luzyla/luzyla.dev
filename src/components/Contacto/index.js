@@ -41,6 +41,7 @@ export function Contacto() {
             sizeIcon="2.8rem"
             classNameIcon="icons-contact"
             classNameIconsTitle="icons-title"
+            contactMe={true}
           ></SocialMediaIcons>
         </aside>
 

@@ -21,7 +21,7 @@ export function Hola() {
               txtButton="PORTFOLIO"
               classNameLink="icon-socialmedia"
             />
-            <SocialMediaIcons />
+            <SocialMediaIcons contactMe={false} />
           </ul>
         </div>
         <Image

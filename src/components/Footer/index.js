@@ -15,6 +15,7 @@ export function Footer() {
         classNameContainer="footer-socialmedia-icons"
         colorIcon="footer-color-icons"
         classNameIcon="footer-icons"
+        contactMe={false}
       />
       <Signature></Signature>
 

@@ -20,8 +20,32 @@ export function Contacto() {
     e.preventDefault();
 
     try {
-      console.log("Formulario enviado: ", formData);
-      setSent(true);
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz2mSa72HENxtrX8FmnE-H27CzEEV6q-_V0-2MiOBnL50pijVRPm_h4w8XKrvf9giIPKQ/exec";
+
+      const formDataToSend = new URLSearchParams();
+      Object.keys(formData).forEach((key) => {
+        formDataToSend.append(key, formData[key]);
+      });
+
+      fetch(scriptURL, {
+        redirect: "follow",
+        method: "POST",
+        body: formDataToSend.toString(),
+        headers: {
+          "Content-type": "text/plain;charset=utf-8",
+          /* "Content-Transfer-Encoding": "application/x-www-form-urlencoded", */
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Formulario enviado: ", data);
+          setSent(true);
+          setFormData({ nombre: "", email: "", message: "" });
+        })
+        .catch((error) => {
+          console.log("Error (then) al enviar el formulario: ", error);
+        });
     } catch (error) {
       console.log("Error al enviar el formulario: ", error);
     }
@@ -47,7 +71,7 @@ export function Contacto() {
 
         <div className="contenedor-form">
           {/* <h2 className="h2-contacto">Escribime</h2> */}
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} id="form-id">
             <label id="nombre" className="etiqueta-form">
               Nombre*:
               <input
@@ -92,7 +116,7 @@ export function Contacto() {
               className="button campo-form campo-form-button"
             />
             {sent ? (
-              <p className="msg-form-enviado">Formulario enviado con éxito!</p>
+              <p className="msg-form-enviado">¡Formulario enviado con éxito!</p>
             ) : null}
           </form>
         </div>

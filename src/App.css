@@ -523,12 +523,10 @@ header,
 }
 
 .campo-form-msg {
-  /* height: 100px; */
   field-sizing: content;
 }
 
 .campo-form::placeholder {
-  /* padding: 1rem; */
   color: #2e2e3180;
   font-family: "Montserrat", "sans serif";
 }
@@ -537,6 +535,14 @@ header,
   background-color: var(--color-pc);
   margin-top: 1.5rem;
 }
+
+.msg-form-enviado {
+  background-color: var(--color-teal-muy-clarito);
+  padding: 1rem;
+  color: var(--color-violeta-complementario);
+  font-weight: 600;
+}
+
 /*--------------------------------
             FOOTER
 ----------------------------------*/

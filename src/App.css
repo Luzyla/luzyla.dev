@@ -180,7 +180,9 @@ nav,
 .div-contacto,
 header,
 .contenedor-skills,
-.seccion-skills {
+.seccion-skills,
+.contenedor-asides,
+.seccion-contacto {
   display: flex;
 }
 
@@ -426,6 +428,119 @@ header,
   font-weight: 700;
   font-size: 16px;
   margin-top: 0;
+}
+
+/*--------------------------------
+            CONTACTO
+----------------------------------*/
+.seccion-contacto {
+  height: 80vh;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.h2-contacto {
+  margin: 4rem 0 2.5rem;
+}
+
+.contenedor-asides {
+  padding: 3rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+/* IMG */
+.contenedor-img-contacto {
+  width: 20vw;
+}
+.contenedor-img-contacto img {
+  width: 100%;
+}
+/* ICONS */
+.contenedor-aside-icons {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  order: 3;
+}
+
+.contenedor-iconos-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* mantiene los íconos alineados a la izquierda */
+  margin: 0 auto;
+}
+
+.contenedor-iconos-contacto a {
+  display: flex;
+  padding: 1.25rem 0;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons-title {
+  color: var(--color-pantalla);
+  font-weight: 500;
+  margin: 10px 0;
+  order: 1;
+}
+
+.icons-contact {
+  order: 2;
+  margin-left: 1rem;
+}
+
+/* FORM */
+.contenedor-form {
+  width: 40vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.etiqueta-form {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  color: var(--color-pad);
+  font-weight: 400;
+  gap: 1.1rem;
+  padding-top: 0.2rem;
+}
+
+.campo-form {
+  width: 25vw;
+  margin: 0.5rem;
+  border-radius: 25px;
+  min-height: 50px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1rem;
+  font-family: "Montserrat", "sans serif";
+}
+
+.campo-form-msg {
+  field-sizing: content;
+}
+
+.campo-form::placeholder {
+  color: #2e2e3180;
+  font-family: "Montserrat", "sans serif";
+}
+
+.campo-form-button {
+  background-color: var(--color-pc);
+  margin-top: 1.5rem;
+}
+
+.msg-form-enviado {
+  background-color: var(--color-teal-muy-clarito);
+  padding: 1rem;
+  color: var(--color-violeta-complementario);
+  font-weight: 600;
 }
 
 /*--------------------------------

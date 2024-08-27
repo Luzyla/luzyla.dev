@@ -34,7 +34,6 @@ export function Contacto() {
         body: formDataToSend.toString(),
         headers: {
           "Content-type": "text/plain;charset=utf-8",
-          /* "Content-Transfer-Encoding": "application/x-www-form-urlencoded", */
         },
       })
         .then((response) => response.json())
@@ -70,8 +69,10 @@ export function Contacto() {
         </aside>
 
         <div className="contenedor-form">
-          {/* <h2 className="h2-contacto">Escribime</h2> */}
           <form onSubmit={handleSubmit} id="form-id">
+            {sent ? (
+              <p className="msg-form-enviado">¡Formulario enviado con éxito!</p>
+            ) : null}
             <label id="nombre" className="etiqueta-form">
               Nombre*:
               <input
@@ -115,9 +116,6 @@ export function Contacto() {
               value={"ENVIAR"}
               className="button campo-form campo-form-button"
             />
-            {sent ? (
-              <p className="msg-form-enviado">¡Formulario enviado con éxito!</p>
-            ) : null}
           </form>
         </div>
       </div>

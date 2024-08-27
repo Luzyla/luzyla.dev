@@ -434,13 +434,13 @@ header,
             CONTACTO
 ----------------------------------*/
 .seccion-contacto {
-  height: 80vh;
+  height: 85vh;
   flex-direction: column;
   padding: 2rem 0;
 }
 
 .h2-contacto {
-  margin: 4rem 0 2.5rem;
+  margin: 6rem 0 2.5rem;
 }
 
 .contenedor-asides {

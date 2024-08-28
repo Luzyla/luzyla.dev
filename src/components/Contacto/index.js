@@ -115,6 +115,7 @@ export function Contacto() {
               type="submit"
               value={"ENVIAR"}
               className="button campo-form campo-form-button"
+              disable={sent}
             />
           </form>
         </div>

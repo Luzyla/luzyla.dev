@@ -434,7 +434,7 @@ header,
             CONTACTO
 ----------------------------------*/
 .seccion-contacto {
-  height: 85vh;
+  min-height: 85vh;
   flex-direction: column;
   padding: 2rem 0;
 }
@@ -732,6 +732,44 @@ header,
     padding-left: 0;
     padding-right: 0;
   }
+
+  /*--------------------------------
+              CONTACTO
+  ----------------------------------*/
+
+  .contenedor-asides {
+    padding: 1.5rem;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  /* IMG */
+  .contenedor-img-contacto {
+    width: 45vw;
+    order: 3;
+  }
+
+  /* ICONS */
+  .contenedor-aside-icons {
+    width: 30vw;
+    order: 2;
+  }
+
+  .contenedor-iconos-contacto a {
+    display: flex;
+    padding: 1.25rem 0;
+  }
+
+  /* FORM */
+  .contenedor-form {
+    width: 50vw;
+    order: 1;
+  }
+
+  .campo-form {
+    width: 45vw;
+  }
 }
 
 /*-------------------------
@@ -882,6 +920,49 @@ header,
     height: 230px;
     margin: 10px;
     padding: 10px;
+  }
+
+  /*--------------------------------
+              CONTACTO
+  ----------------------------------*/
+
+  .contenedor-asides {
+    padding: 1.5rem;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  /* IMG */
+  .contenedor-img-contacto {
+    width: 55vw;
+    order: 3;
+  }
+
+  /* ICONS */
+  .contenedor-aside-icons {
+    width: 65vw;
+    order: 1;
+  }
+
+  .contenedor-iconos-contacto {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .icons-title {
+    display: none;
+  }
+
+  /* FORM */
+  .contenedor-form {
+    width: 65vw;
+    order: 2;
+  }
+
+  .campo-form {
+    width: 65vw;
   }
 
   /*--------------------------------

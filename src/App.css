@@ -747,13 +747,13 @@ header,
   /* IMG */
   .contenedor-img-contacto {
     width: 45vw;
-    order: 3;
+    /* order: 3; */
   }
 
   /* ICONS */
   .contenedor-aside-icons {
+    justify-content: center;
     width: 30vw;
-    order: 2;
   }
 
   .contenedor-iconos-contacto a {
@@ -763,7 +763,7 @@ header,
 
   /* FORM */
   .contenedor-form {
-    width: 50vw;
+    width: 65vw;
     order: 1;
   }
 
@@ -937,13 +937,11 @@ header,
   /* IMG */
   .contenedor-img-contacto {
     width: 55vw;
-    order: 3;
   }
 
   /* ICONS */
   .contenedor-aside-icons {
     width: 65vw;
-    order: 1;
   }
 
   .contenedor-iconos-contacto {

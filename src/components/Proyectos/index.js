@@ -6,8 +6,9 @@ import { Link } from "../Link";
 const initProjectList = [
   {
     id: 1,
-    link: "http://luzyla.github.io/proyecto-1-portfolio/",
-    dataName: "html",
+    link: "https://luzyla.dev/",
+    oldLink: "http://luzyla.github.io/proyecto-1-portfolio/",
+    dataName: "react",
     imageUrl: "./images/portfolio.svg",
     altText: "Portfolio de Luzyla",
     txtContent: "Portfolio",

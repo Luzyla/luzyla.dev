@@ -7,9 +7,10 @@ export function ButtonLink({
   className,
   txtButton,
   classNameLink,
+  onClick,
 }) {
   return (
-    <Link url={url} target={target} className={classNameLink}>
+    <Link url={url} target={target} className={classNameLink} onClick={onClick}>
       {<li className={className}>{txtButton}</li>}
     </Link>
   );

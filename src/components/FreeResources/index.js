@@ -38,8 +38,8 @@ export function FreeResources() {
   return (
     <div className="footer-recursos">
       {dataResources.map((data) => (
-        <span className="footer-cada-recurso">
-          <Link url={data.url} target="_blank" title={data?.title} key={data.id} className={""}>
+        <span className="footer-cada-recurso" key={data.id}>
+          <Link url={data.url} target="_blank" title={data?.title} className={""}>
           {data.children}
           </Link>
         </span>

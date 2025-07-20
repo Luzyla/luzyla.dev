@@ -43,6 +43,14 @@ const skillSet = [
     txtContent: "React",
   },
   {
+    id: 14,
+    cardClass: "skills",
+    imgClass: "img-skills",
+    url: "../images/logos/typescript.png",
+    altTxt: "React",
+    txtContent: "TypeScript",
+  },
+  {
     id: 6,
     cardClass: "skills",
     imgClass: "img-skills",

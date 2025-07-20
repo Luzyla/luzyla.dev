@@ -52,7 +52,7 @@ export function Contacto() {
 
   return (
     <section className="seccion-contacto" id="a-contacto">
-      <h2 className="h2-contacto">Contactame</h2>
+      <h2 className="h2-contacto">Get in Touch!</h2>
       <div className="contenedor-asides">
         <picture className="contenedor-img-contacto">
           <img src="../images/contact/Feedback-amico.svg" alt="" />
@@ -71,10 +71,10 @@ export function Contacto() {
         <div className="contenedor-form">
           <form onSubmit={handleSubmit} id="form-id">
             {sent ? (
-              <p className="msg-form-enviado">¡Formulario enviado con éxito!</p>
+              <p className="msg-form-enviado">Form submitted successfully!</p>
             ) : null}
             <label id="nombre" className="etiqueta-form">
-              Nombre*:
+              Name*:
               <input
                 type="text"
                 name="nombre"
@@ -100,7 +100,7 @@ export function Contacto() {
             </label>
 
             <label id="message" className="etiqueta-form">
-              Mensaje*:
+              Message*:
               <textarea
                 name="message"
                 value={formData.message}
@@ -113,7 +113,7 @@ export function Contacto() {
 
             <input
               type="submit"
-              value={"ENVIAR"}
+              value={"SUBMIT"}
               className="button campo-form campo-form-button"
               disable={sent}
             />

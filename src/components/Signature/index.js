@@ -6,8 +6,8 @@ export function Signature() {
   return (
     <div className="footer-signature-container">
       <p className="amor">
-        Hecho con <Emoji symbol="❤️" label="corazón" /> y mucho{" "}
-        <Emoji symbol="🧉" label="matecito" /> por{" "}
+        Crafted with <Emoji symbol="❤️" label="corazón" /> and fueled by{" "}
+        <Emoji symbol="🧉" label="matecito" /> by{" "}
         <span className="span-footer">
           <Link url="https://linkedin.com/in/luzyla" target="_blank">
             Luzyla

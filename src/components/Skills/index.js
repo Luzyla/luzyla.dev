@@ -79,8 +79,8 @@ const skillSet = [
     cardClass: "skills",
     imgClass: "img-skills logos-skills",
     url: "../images/logos/domain.png",
-    altTxt: "Dominios web",
-    txtContent: "Dominios web",
+    altTxt: "Web Domains",
+    txtContent: "Web Domains",
   },
  
   {
@@ -112,7 +112,7 @@ const skillSet = [
 export function Skills() {
   return (
     <section className="seccion-skills" id="a-skills">
-      <h2 className="h2-skills">Habilidades y Tecnologías</h2>
+      <h2 className="h2-skills">Tech Skills</h2>
 
       <div className="contenedor-skills">
         {skillSet.map((skill) => (

@@ -213,7 +213,12 @@ header,
 .p-hola {
   text-align: left;
   color: #607b82;
-  margin: 16px 0 40px 0;
+  margin: 16px 0;
+}
+
+.p-hello2 {
+  margin: 20px 0 35px 0;
+  max-width: 90%;
 }
 
 .hola-link {
@@ -382,12 +387,6 @@ header,
 }
 
 .buttonClicked {
-  background-color: #007b67;
-  border-radius: 25px;
-  color: #d3faf5;
-}
-
-.menu-proyectos:focus {
   background-color: #007b67;
   border-radius: 25px;
   color: #d3faf5;

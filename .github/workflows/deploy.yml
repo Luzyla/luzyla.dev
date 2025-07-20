@@ -1,0 +1,51 @@
+# Nombre del workflow
+name: Deploy Luzyla.dev to Hostinger
+
+# Se ejecuta cada vez que hay un push a la rama 'main'
+on:
+  push:
+    branches:
+      - main # O tu rama de producción, ej. 'master'
+
+# Los trabajos a ejecutar
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # El sistema operativo de la máquina virtual donde se ejecutará
+
+    steps:
+      # 1. Descargar el código de tu repositorio
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 2. Configurar Node.js (necesario para React)
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' # Ajusta a la versión de Node.js que uses
+
+      # 3. Instalar las dependencias de tu proyecto React
+      - name: Install Dependencies
+        run: npm install # O 'yarn install' si usas Yarn
+
+      # 4. Construir la aplicación React (esto crea la carpeta 'build/')
+      - name: Build React App
+        run: npm run build # O 'yarn build' si usas Yarn
+
+      # 5. ¡Desplegar a Hostinger vía FTP!
+      # Es una acción de la comunidad diseñada para subir archivos por FTP.
+      - name: Deploy to Hostinger via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.0 # Esta es la acción que hace la magia de subir
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}
+          # La carpeta LOCAL que se va a subir (la generada por 'npm run build')
+          'local-dir': './build/' 
+          # La carpeta REMOTA en tu Hostinger donde quieres que se suban los archivos
+          'remote-dir': ${{ secrets.FTP_REMOTE_PATH }} 
+          # Opciones de limpieza: borra archivos en el servidor remoto que no estén en tu build local
+          # Útil para evitar que queden archivos viejos, pero úsalo con precaución
+          delete-remote-untracked: true 
+          dry-run: false # ¡Asegúrate de que sea 'false' para que el despliegue sea real!
+          

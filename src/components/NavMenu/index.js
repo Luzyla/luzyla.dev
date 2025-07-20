@@ -7,13 +7,13 @@ export function NavMenu({ id, classNameBtn, classNameList, handleToggleMenu }) {
       <ButtonLink
         url="#a-hola"
         className={classNameBtn}
-        txtButton="HOLA"
+        txtButton="ABOUT"
         onClick={handleToggleMenu}
       ></ButtonLink>
       <ButtonLink
-        url="#a-skills"
+        url="#a-proyectos"
         className={classNameBtn}
-        txtButton="CONOCIMIENTOS"
+        txtButton="PROJECTS"
         onClick={handleToggleMenu}
       ></ButtonLink>
       <ButtonLink
@@ -23,15 +23,15 @@ export function NavMenu({ id, classNameBtn, classNameList, handleToggleMenu }) {
         onClick={handleToggleMenu}
       ></ButtonLink>
       <ButtonLink
-        url="#a-proyectos"
+        url="#a-skills"
         className={classNameBtn}
-        txtButton="PORTFOLIO"
+        txtButton="SKILLS"
         onClick={handleToggleMenu}
       ></ButtonLink>
       <ButtonLink
         url="#a-contacto"
         className={`${classNameBtn} button`}
-        txtButton="CONTACTO"
+        txtButton="CONTACT"
         onClick={handleToggleMenu}
       ></ButtonLink>
     </ul>

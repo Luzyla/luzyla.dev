@@ -7,12 +7,11 @@ import { Quote } from "./components/Quote";
 import { Skills } from "./components/Skills";
 import { Contacto } from "./components/Contacto";
 import { Footer } from "./components/Footer";
-import Meta from "./components/MetaData";
+
 
 function App() {
   return (
     <div className="App">
-      <Meta></Meta>
       <Header></Header>
       <Hola></Hola>
       <Proyectos></Proyectos>

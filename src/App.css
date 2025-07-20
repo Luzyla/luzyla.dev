@@ -392,12 +392,6 @@ header,
   color: #d3faf5;
 }
 
-.menu-proyectos:focus {
-  background-color: #007b67;
-  border-radius: 25px;
-  color: #d3faf5;
-}
-
 /* -- CAJA DE TARJETAS -- */
 .contenedor-proyectos {
   display: flex;

@@ -6,122 +6,108 @@ import { Link } from "../Link";
 const initProjectList = [
   {
     id: 1,
-    link: "https://luzyla.dev/",
-    oldLink: "http://luzyla.github.io/proyecto-1-portfolio/",
-    dataName: "react",
-    imageUrl: "./images/portfolio.svg",
-    altText: "Portfolio de Luzyla",
-    txtContent: "Portfolio",
-  },
-  {
-    id: 2,
     link: "http://luzyla.github.io/proyecto-2-tienda-viajes/",
     dataName: "js",
     imageUrl: "./images/ecommerce.svg",
-    altText: "Tienda",
-    txtContent: "Tienda",
+    altText: "Travel E-commerce",
+    txtContent: "Travel E-commerce",
   },
   {
-    id: 3,
+    id: 2,
     link: "http://luzyla.github.io/proyecto-3-matcheadas/",
     dataName: "js",
     imageUrl: "./images/matcheadas.svg",
-    altText: "Matcheadas",
-    txtContent: "Matcheadas",
+    altText: "Match Game",
+    txtContent: "Match Game",
   },
   {
-    id: 4,
+    id: 3,
     link: "http://luzyla.github.io/proyecto-5-marvel-comics/",
     dataName: "js",
     imageUrl: "./images/comics.svg",
-    altText: "Buscador de Comics",
-    txtContent: "Buscador de Comics",
+    altText: "Comic Search (Marvel API)",
+    txtContent: "Marvel Comics Finder",
   },
   {
-    id: 5,
+    id: 4,
     link: "http://luzyla-proyecto-7.netlify.app",
     dataName: "react",
     imageUrl: "./images/movie-night.svg",
-    altText: "Buscador de Películas",
-    txtContent: "Buscador de Películas",
+    altText: "Movie Search",
+    txtContent: "Movie Search",
   },
   {
-    id: 6,
+    id: 5,
     link: "https://luzyla.github.io/mytree/",
     dataName: "html",
     imageUrl: "./images/social-tree.svg",
-    altText: "MyTree",
-    txtContent: "MyTree",
+    altText: "MyTree (Link-in-Bio Tool)",
+    txtContent: "MyTree Tool",
   },
   {
-    id: 7,
+    id: 6,
     link: "http://memelandia.luzyla.dev",
     dataName: "js",
     imageUrl: "./images/upload-memelandia.svg",
     altText: "Memelandia",
-    txtContent: "Memelandia",
+    txtContent: "Memelandia (Meme Maker)",
   },
   {
-    id: 8,
+    id: 7,
     link: "https://luzyla.github.io/piedraPapelTijera/",
     dataName: "js",
     imageUrl: "./images/hands-play.svg",
-    altText: "Piedra, papel o tijera",
-    txtContent: "Piedra, papel o tijera",
+    altText: "Rock, Paper, Scissors Game",
+    txtContent: "Rock, Paper, Scissors Game",
   },
   {
-    id: 9,
+    id: 8,
     link: "https://luzyla.github.io/mug/",
     dataName: "html",
     imageUrl: "./images/mug.svg",
-    altText: "Mug",
-    txtContent: "Mug",
+    altText: "Mug (Design Tribute)",
+    txtContent: "Mug (Design Tribute)",
   },
   {
-    id: 10,
+    id: 9,
     link: "https://luzyla.github.io/librosyviajes-all/",
     dataName: "html",
     imageUrl: "./images/book-lover.svg",
-    altText: "Libros y Viajes",
-    txtContent: "Libros y Viajes",
+    altText: "Books & Travels",
+    txtContent: "Books & Travels",
   },
   {
-    id: 11,
+    id: 10,
     link: "https://nleats-surprise.netlify.app/",
     dataName: "js",
     imageUrl: "./images/thank-you.svg",
-    altText: "Random Quotes",
-    txtContent: "Random Quotes",
-  },
-  /* {
-    id: ,
-    link: "http://tamarabrilla.com",
-    dataName: "html",
-    imageUrl: "./images/",
-    altText: "Tamara Brilla",
-    txtContent: "Tamara Brilla",
-  }, */
+    altText: "Random Quote Generator",
+    txtContent: "Random Quote Generator",
+  }
 ];
 
 export function Proyectos() {
   const [projectList, setProjectList] = useState(initProjectList);
+  const [activeCategory, setActiveCategory] = useState('all');
 
   const handleSortProjectList = (dataName) => {
     if (dataName === "all") {
       setProjectList([...initProjectList]);
+      setActiveCategory(dataName)
     } else {
       const filteredArray = [...initProjectList].filter(
         (project) => project.dataName === dataName
       );
       setProjectList(filteredArray);
+      setActiveCategory(dataName)
     }
   };
 
   return (
     <section className="seccion-proyectos" id="a-proyectos">
-      <h2 className="h2-proyectos">Portfolio</h2>
+      <h2 className="h2-proyectos">Projects</h2>
 
-      <SorterBar onSort={handleSortProjectList} />
+      <SorterBar onSort={handleSortProjectList} activeCategory={activeCategory} />
 
       <div className="contenedor-proyectos">
         {projectList.map((project) => (

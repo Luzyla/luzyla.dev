@@ -8,17 +8,20 @@ export function Hola() {
     <section className="seccion-hola" id="a-hola">
       <div className="contenedor-hola">
         <div className="texto-hola">
-          <h3>¡Hola! Soy</h3>
+          <h3>Hello! I am</h3>
           <h1>Lucila Di Lorenzo</h1>
           <p className="p-hola">
-            Desarrolladora FrontEnd, Scrum Master y curiosa por naturaleza!
+            A FrontEnd Developer, Scrum Master, and naturally curious!
+          </p>
+          <p className="p-hola p-hello2">
+            Leveraging a scientific background, I craft intuitive and performant web solutions with React, TypeScript, and modern UI architectures. 
           </p>
 
           <ul className="button-section">
             <ButtonLink
               url="#a-proyectos"
               className="button"
-              txtButton="PORTFOLIO"
+              txtButton="SEE MY PROJECTS"
               classNameLink="icon-socialmedia"
             />
             <SocialMediaIcons contactMe={false} />

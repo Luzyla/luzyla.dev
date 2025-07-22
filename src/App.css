@@ -11,26 +11,43 @@
   --color-iconos-laterales: #00dfc0;
   /* rgb(0,223,192); /*iconos laterales*/
   --color-data-bases: #d3faf5;
+  --color-data-bases-t40: #d3faf540;
+  --color-data-bases-t26: #d3faf526;
   /*data bases*/
   --color-violeta-complementario: #483d8b;
   /*violeta complementario*/
   --color-verde: rgb(0, 128, 128);
   --color-verde-oscuro: rgb(19, 81, 68);
   /*verde oscuro*/
-  --color-gris-oscuro: rgb(64, 81, 85);
+  --color-gris-oscuro: #405155;
   /*gris oscuro*/
+  --color-gray: #424242;
   --color-teal-muy-clarito: #a8f0df;
   /*teal muy clarito*/
+  --color-base: #fafafa;
+  --font-color: #2e2e31;
+  --background-color: #ffffff;
+  --color-skills: #dddfe5;
+  --text-shadow: #42424280;
+}
+
+.dark-mode {
+  --color-base: #424242;
+  --font-color: #fafafa;
+  --background-color: #000;
+  --color-skills: #2e2e31;
+  --text-shadow: #42424280;
+  --color-teal-muy-clarito: #607b82;
 }
 
 html {
   scroll-behavior: smooth;
-  scrollbar-color: #009c86 #fafafa;
+  scrollbar-color: var(--color-pc) var(--color-base);
   scrollbar-width: thin;
 }
 
 body {
-  color: #2e2e31;
+  color: var(--font-color);
   font-family: "Montserrat", "sans serif";
 }
 
@@ -41,7 +58,7 @@ body {
 }
 
 header {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   padding: 20px 0;
   width: 100%;
   justify-content: flex-end;
@@ -66,8 +83,8 @@ h1 {
   font-family: "Allura";
   font-weight: 900;
   font-size: 75px;
-  color: #009c86;
-  text-shadow: 2px 2px 4px #42424280;
+  color: var(--color-pc);
+  text-shadow: 2px 2px 4px var(--text-shadow);
 }
 
 h2,
@@ -82,7 +99,7 @@ h2 {
 
 h3 {
   font-size: 30px;
-  color: #424242;
+  color: var(--color-gray);
   margin: 90px 0 10px 0;
 }
 
@@ -128,16 +145,30 @@ a,
 .icono-burger {
   display: block;
   font-size: 30px;
-  color: #007b67;
+  color: var(--color-pad);
   margin: 10px 0;
 }
 
 .button {
-  background-color: #007b67;
+  background-color: var(--color-pad);
   border-radius: 25px;
-  color: #d3faf5;
+  color: var(--color-data-bases);
   padding: 10px 40px;
   font-weight: bold;
+}
+
+.button-mode {
+  background-color: transparent;
+  border: 0px transparent;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-mode {
+  width: 100%;
+  margin-left: 2.5rem;
 }
 
 /*--------------------------------
@@ -212,7 +243,7 @@ header,
 
 .p-hola {
   text-align: left;
-  color: #607b82;
+  color: var(--color-pantalla);
   margin: 16px 0;
 }
 
@@ -243,7 +274,7 @@ header,
 ----------------------------------*/
 
 .seccion-skills {
-  background-color: #d3faf540;
+  background-color: var(--color-data-bases-t40);
   padding: 45px;
   align-items: center;
   flex-direction: column;
@@ -260,13 +291,13 @@ header,
 
 /* -- CAJA DE CADA TARJETA -- */
 .skills {
-  background-color: #fafafa;
-  border: 1px #dddfe5 solid;
+  background-color: var(--color-base);
+  border: 1px var(--color-skills) solid;
   border-radius: 10px;
   width: 30%;
   margin: 0.5rem;
   padding: 2rem;
-  color: #2e2e31;
+  color: var(--font-color);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
   display: flex;
@@ -308,7 +339,7 @@ header,
     rgba(27, 70, 61, 1) 94%,
     rgba(33, 60, 56, 1) 100%
   );
-  color: #fafafa;
+  color: var(--color-base);
   padding: 100px 40px 100px;
   justify-content: center;
   height: 100%;
@@ -329,7 +360,7 @@ header,
 .h3-quote {
   font-family: "Allura";
   font-size: 60px;
-  color: #fafafa;
+  color: var(--color-base);
   padding-bottom: 20px;
   font-weight: normal;
 }
@@ -357,7 +388,7 @@ header,
         SECCIÓN PROYECTOS
 ----------------------------------*/
 .seccion-proyectos {
-  background-color: #d3faf526;
+  background-color: var(--color-data-bases-t26);
   padding: 45px;
 }
 
@@ -370,7 +401,7 @@ header,
 
 .menu-proyectos {
   font-size: 16px;
-  background-color: #d3faf526;
+  background-color: var(--color-data-bases-t26);
   border: none;
   padding: 15px 40px;
   text-decoration: none;
@@ -379,17 +410,17 @@ header,
 }
 
 .menu-proyectos:hover {
-  background-color: #007b67;
+  background-color: var(--color-pad);
   border-radius: 25px;
-  color: #d3faf5;
+  color: var(--color-data-bases);
   padding: 10px 40px;
   cursor: pointer;
 }
 
 .buttonClicked {
-  background-color: #007b67;
+  background-color: var(--color-pad);
   border-radius: 25px;
-  color: #d3faf5;
+  color: var(--color-data-bases);
 }
 
 /* -- CAJA DE TARJETAS -- */
@@ -403,14 +434,14 @@ header,
 
 /* -- CAJA DE CADA TARJETA -- */
 .proyectos {
-  background-color: #fafafa;
+  background-color: var(--color-base);
   border: 1px #dddfe5 solid;
   border-radius: 10px;
   width: 330px;
   height: 287px;
   margin: 10px;
   padding: 30px;
-  color: #2e2e31;
+  color: var(--font-color);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -526,7 +557,9 @@ header,
 }
 
 .campo-form::placeholder {
-  color: #2e2e3180;
+  /* color: #2e2e3180; */
+  color: var(--font-color);
+  opacity: 40%;
   font-family: "Montserrat", "sans serif";
 }
 
@@ -546,7 +579,7 @@ header,
             FOOTER
 ----------------------------------*/
 .seccion-footer {
-  background-color: #009c86;
+  background-color: var(--color-pc);
   padding: 45px;
   flex-direction: column;
 }
@@ -561,7 +594,7 @@ header,
 
 .menu-footer {
   font-size: 14px;
-  color: #00dfc0;
+  color: var(--color-iconos-laterales);
   color: var(--color-teal-muy-clarito);
 }
 
@@ -583,12 +616,12 @@ header,
 
 /* -- TEXTO -- */
 .span-footer {
-  color: #fafafa;
+  color: var(--color-base);
   cursor: pointer;
 }
 
 .span-footer a {
-  color: #fafafa;
+  color: var(--color-base);
 }
 
 .amor {
@@ -786,7 +819,7 @@ header,
   .icono-burger {
     display: block;
     font-size: 30px;
-    color: #007b67;
+    color: var(--color-pad);
   }
 
   /*--------------------------------

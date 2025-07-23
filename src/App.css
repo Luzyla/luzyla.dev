@@ -85,7 +85,7 @@
   --background-color-light: #190f2e;
   /* #46315c; */
   /* --color-data-bases-t40:  */
-  --background-color-light2: #28193d;
+  --background-color-light2: #28193d90;
   /* #28193d; */
   /* color-pc */
   --background-color-dark: #46315c;
@@ -108,7 +108,8 @@
   --text-shadow: #fafafa80;
   --box-shadow-header: 0 0 29px 0 #fafafa40;
   --box-shadow-form: 0 4px 8px 0 #00000066, 0 6px 20px 0 #0000004d;
-  --box-shadow-card: 0 4px 8px 0 #2c203ac2, 0 6px 10px 0 #46315cc2;
+  --box-shadow-card: 0 0 10px 0 rgba(255, 255, 255, 0.05);
+  /* 0 4px 8px 0 #2c203ac2, 0 6px 10px 0 #46315cc2; */
 }
 
 html {

@@ -2,53 +2,125 @@
 @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 
 :root {
-  --color-pc: #009c86;
-  /*pc*/
-  --color-pad: #007b67;
-  /* rgb(0,123,103); 006754; /*pad*/
-  --color-pantalla: #607b82;
-  /* rgb(96,123,130); /*pantalla*/
-  --color-iconos-laterales: #00dfc0;
-  /* rgb(0,223,192); /*iconos laterales*/
-  --color-data-bases: #d3faf5;
-  --color-data-bases-t40: #d3faf540;
-  --color-data-bases-t26: #d3faf526;
-  /*data bases*/
-  --color-violeta-complementario: #483d8b;
-  /*violeta complementario*/
-  --color-verde: rgb(0, 128, 128);
-  --color-verde-oscuro: rgb(19, 81, 68);
-  /*verde oscuro*/
-  --color-gris-oscuro: #405155;
-  /*gris oscuro*/
-  --color-gray: #424242;
-  --color-teal-muy-clarito: #a8f0df;
-  /*teal muy clarito*/
-  --color-base: #fafafa;
-  --font-color: #2e2e31;
+  /* (pantalla) */
+  --color-txt-base: #607b82;
+  /* font-color */
+  --color-txt-base2: #2e2e31;
+  /* (data-bases) */
+  --color-txt-acento: #d3faf5;
+  /* (--color-gray) */
+  --color-txt-dark: #424242;
+  /* color-pc */
+  --color-txt-ppal: #009c86;
+  /* color base */
+  --color-txt-white: #fafafa;
+  /* --color-teal-muy-clarito:  */
+  --color-txt-light: #a8f0df;
+  /* --color-violeta-complementario:  */
+  --color-txt-purple: #483d8b;
+  --color-txt-love: #00dfc0;
+
+  /* color-pad buttons*/
+  --color-icons: #007b67;
+  /* data-bases */
+  --color-button-light: #d3faf526;
+
   --background-color: #ffffff;
-  --color-skills: #dddfe5;
+  /* --color-data-bases-t26:  */
+  --background-color-light: #d3faf526;
+  /* --color-data-bases-t40:  */
+  --background-color-light2: #d3faf540;
+  /* color-pc */
+  --background-color-dark: #009c86;
+  /* base fafafa */
+  --background-color-white: #fafafa;
+  /* --color-teal-muy-clarito:  */
+  --background-color-light3: #a8f0df;
+  --background-mobile: #fafafa99;
+
+  --background-gradient: linear-gradient(
+    180deg,
+    #00dfc0 0%,
+    #1b463d 94%,
+    #213c38 100%
+  );
+
+  /* skills */
+  --color-card-border: #dddfe5;
+
   --text-shadow: #42424280;
+  --box-shadow-header: 0 0 29px 0 #86868640;
+  --box-shadow-form: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --box-shadow-card: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 
 .dark-mode {
-  --color-base: #424242;
-  --font-color: #fafafa;
-  --background-color: #000;
-  --color-skills: #2e2e31;
-  --text-shadow: #42424280;
-  --color-teal-muy-clarito: #607b82;
+  /* (pantalla) */
+  --color-txt-base: #b3a3ba;
+  /* font-color */
+  --color-txt-base2: #d9d8d9;
+  /* (data-bases) */
+  --color-txt-acento: #b3a3ba;
+  /* (--color-gray) */
+  --color-txt-dark: #d9d8d9;
+  /* color-pc */
+  --color-txt-ppal: #009c86;
+  /* color base */
+  --color-txt-white: #d9d8d9;
+  /* #10091d; */
+  /* --color-teal-muy-clarito:  */
+  --color-txt-light: #b3a3ba;
+  /* --color-violeta-complementario:  */
+  --color-txt-purple: #d9d8d9;
+  --color-txt-love: #b3a3ba;
+
+  /* color-pad buttons*/
+  --color-icons: #68507b;
+  /* data-bases */
+  --color-button-light: #b3a3ba26;
+
+  --background-color: #10091d;
+  /* --color-data-bases-t26:  */
+  --background-color-light: #190f2e;
+  /* #46315c; */
+  /* --color-data-bases-t40:  */
+  --background-color-light2: #28193d;
+  /* #28193d; */
+  /* color-pc */
+  --background-color-dark: #46315c;
+  /* base fafafa */
+  --background-color-white: #28193d80;
+  /* --color-teal-muy-clarito:  */
+  --background-color-light3: #68507b;
+  --background-mobile: #10091d99;
+
+  --background-gradient: linear-gradient(
+    180deg,
+    #68507b 0%,
+    #46315c 94%,
+    #28193d 100%
+  );
+
+  /* skills */
+  --color-card-border: #46315c;
+
+  --text-shadow: #fafafa80;
+  --box-shadow-header: 0 0 29px 0 #fafafa40;
+  --box-shadow-form: 0 4px 8px 0 #00000066, 0 6px 20px 0 #0000004d;
+  --box-shadow-card: 0 4px 8px 0 #2c203ac2, 0 6px 10px 0 #46315cc2;
 }
 
 html {
   scroll-behavior: smooth;
-  scrollbar-color: var(--color-pc) var(--color-base);
+  scrollbar-color: var(--background-color-dark) var(--background-color-white);
   scrollbar-width: thin;
 }
 
 body {
-  color: var(--font-color);
+  color: var(--color-txt-base2);
   font-family: "Montserrat", "sans serif";
+  background-color: var(--background-color);
 }
 
 * {
@@ -62,7 +134,7 @@ header {
   padding: 20px 0;
   width: 100%;
   justify-content: flex-end;
-  box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+  box-shadow: var(--box-shadow-header);
 }
 
 /*-------------------------
@@ -83,7 +155,7 @@ h1 {
   font-family: "Allura";
   font-weight: 900;
   font-size: 75px;
-  color: var(--color-pc);
+  color: var(--color-txt-ppal);
   text-shadow: 2px 2px 4px var(--text-shadow);
 }
 
@@ -95,11 +167,12 @@ h3 {
 h2 {
   font-size: 45px;
   text-align: center;
+  color: var(--color-txt-base2);
 }
 
 h3 {
   font-size: 30px;
-  color: var(--color-gray);
+  color: var(--color-txt-dark);
   margin: 90px 0 10px 0;
 }
 
@@ -132,7 +205,7 @@ a,
 
 .nav-header {
   margin-right: 10%;
-  color: var(--color-pantalla);
+  color: var(--color-txt-base);
 }
 
 .menu-header,
@@ -145,14 +218,14 @@ a,
 .icono-burger {
   display: block;
   font-size: 30px;
-  color: var(--color-pad);
+  color: var(--color-icons);
   margin: 10px 0;
 }
 
 .button {
-  background-color: var(--color-pad);
+  background-color: var(--color-icons);
   border-radius: 25px;
-  color: var(--color-data-bases);
+  color: var(--color-txt-acento);
   padding: 10px 40px;
   font-weight: bold;
 }
@@ -184,7 +257,7 @@ a,
 }
 
 .barra-mobile {
-  background-color: rgba(250, 250, 250, 0.6);
+  background-color: var(--background-mobile);
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -225,6 +298,7 @@ header,
   justify-content: center;
   align-items: center;
   padding-top: 1.5rem;
+  background-color: var(--background-color);
 }
 
 .contenedor-hola {
@@ -243,7 +317,7 @@ header,
 
 .p-hola {
   text-align: left;
-  color: var(--color-pantalla);
+  color: var(--color-txt-base);
   margin: 16px 0;
 }
 
@@ -274,7 +348,7 @@ header,
 ----------------------------------*/
 
 .seccion-skills {
-  background-color: var(--color-data-bases-t40);
+  background-color: var(--background-color-light2);
   padding: 45px;
   align-items: center;
   flex-direction: column;
@@ -291,20 +365,20 @@ header,
 
 /* -- CAJA DE CADA TARJETA -- */
 .skills {
-  background-color: var(--color-base);
-  border: 1px var(--color-skills) solid;
+  background-color: var(--background-color-white);
+  border: 1px var(--color-card-border) solid;
   border-radius: 10px;
   width: 30%;
   margin: 0.5rem;
   padding: 2rem;
-  color: var(--font-color);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: var(--color-txt-base2);
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  box-shadow: var(--box-shadow-card);
 }
 
 .img-skills {
@@ -332,14 +406,8 @@ header,
         SECCIÓN QUOTE
 ----------------------------------*/
 .seccion-quote {
-  background: rgb(0, 223, 192);
-  background: linear-gradient(
-    180deg,
-    rgba(0, 223, 192, 1) 0%,
-    rgba(27, 70, 61, 1) 94%,
-    rgba(33, 60, 56, 1) 100%
-  );
-  color: var(--color-base);
+  background: var(--background-gradient);
+  color: var(--color-txt-white);
   padding: 100px 40px 100px;
   justify-content: center;
   height: 100%;
@@ -360,7 +428,7 @@ header,
 .h3-quote {
   font-family: "Allura";
   font-size: 60px;
-  color: var(--color-base);
+  color: var(--color-txt-white);
   padding-bottom: 20px;
   font-weight: normal;
 }
@@ -388,7 +456,7 @@ header,
         SECCIÓN PROYECTOS
 ----------------------------------*/
 .seccion-proyectos {
-  background-color: var(--color-data-bases-t26);
+  background-color: var(--background-color-light);
   padding: 45px;
 }
 
@@ -401,26 +469,28 @@ header,
 
 .menu-proyectos {
   font-size: 16px;
-  background-color: var(--color-data-bases-t26);
+  background-color: var(--color-button-light);
   border: none;
   padding: 15px 40px;
   text-decoration: none;
   border-radius: 25px;
   transition: 0.4s;
+  color: var(--color-txt-base2);
 }
 
 .menu-proyectos:hover {
-  background-color: var(--color-pad);
+  background-color: var(--color-icons);
   border-radius: 25px;
-  color: var(--color-data-bases);
+  color: var(--color-txt-acento);
   padding: 10px 40px;
   cursor: pointer;
 }
 
 .buttonClicked {
-  background-color: var(--color-pad);
+  background-color: var(--color-icons);
   border-radius: 25px;
-  color: var(--color-data-bases);
+  color: var(--color-txt-acento);
+  font-weight: bold;
 }
 
 /* -- CAJA DE TARJETAS -- */
@@ -434,15 +504,15 @@ header,
 
 /* -- CAJA DE CADA TARJETA -- */
 .proyectos {
-  background-color: var(--color-base);
-  border: 1px #dddfe5 solid;
+  background-color: var(--background-color-white);
+  border: 1px var(--color-card-border) solid;
   border-radius: 10px;
   width: 330px;
   height: 287px;
   margin: 10px;
   padding: 30px;
-  color: var(--font-color);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: var(--color-txt-base2);
+  box-shadow: var(--box-shadow-card);
 }
 
 .img-proyectos {
@@ -467,6 +537,7 @@ header,
   min-height: 85vh;
   flex-direction: column;
   padding: 2rem 0;
+  background-color: var(--background-color);
 }
 
 .h2-contacto {
@@ -511,7 +582,7 @@ header,
 }
 
 .icons-title {
-  color: var(--color-pantalla);
+  color: var(--color-txt-base);
   font-weight: 500;
   margin: 10px 0;
   order: 1;
@@ -535,10 +606,11 @@ header,
   display: flex;
   flex-direction: column;
   width: 20vw;
-  color: var(--color-pad);
+  color: var(--color-icons);
   font-weight: 400;
-  gap: 1.1rem;
   padding-top: 0.2rem;
+  font-weight: bold;
+  margin-top: 1.1rem;
 }
 
 .campo-form {
@@ -547,7 +619,7 @@ header,
   border-radius: 25px;
   min-height: 50px;
   border: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: var(--box-shadow-form);
   padding: 1rem;
   font-family: "Montserrat", "sans serif";
 }
@@ -558,20 +630,20 @@ header,
 
 .campo-form::placeholder {
   /* color: #2e2e3180; */
-  color: var(--font-color);
+  color: var(--color-txt-base2);
   opacity: 40%;
   font-family: "Montserrat", "sans serif";
 }
 
 .campo-form-button {
-  background-color: var(--color-pc);
+  background-color: var(--background-color-dark);
   margin-top: 1.5rem;
 }
 
 .msg-form-enviado {
-  background-color: var(--color-teal-muy-clarito);
+  background-color: var(--background-color-light3);
   padding: 1rem;
-  color: var(--color-violeta-complementario);
+  color: var(--color-txt-purple);
   font-weight: 600;
 }
 
@@ -579,7 +651,7 @@ header,
             FOOTER
 ----------------------------------*/
 .seccion-footer {
-  background-color: var(--color-pc);
+  background-color: var(--background-color-dark);
   padding: 45px;
   flex-direction: column;
 }
@@ -594,8 +666,8 @@ header,
 
 .menu-footer {
   font-size: 14px;
-  color: var(--color-iconos-laterales);
-  color: var(--color-teal-muy-clarito);
+  color: var(--color-icons);
+  color: var(--color-txt-light);
 }
 
 .emoji-size {
@@ -612,20 +684,21 @@ header,
   padding: 10px;
   margin: 10px;
   transition: 0.3s;
+  color: var(--color-icons);
 }
 
 /* -- TEXTO -- */
 .span-footer {
-  color: var(--color-base);
+  color: var(--color-txt-white);
   cursor: pointer;
 }
 
 .span-footer a {
-  color: var(--color-base);
+  color: var(--color-txt-white);
 }
 
 .amor {
-  color: #00dfc0;
+  color: var(--color-txt-love);
   font-size: 18px;
 }
 
@@ -640,7 +713,7 @@ header,
 
 .footer-recursos a {
   font-weight: 400;
-  color: var(--color-teal-muy-clarito);
+  color: var(--color-txt-light);
 }
 
 .footer-cada-recurso {
@@ -651,18 +724,18 @@ header,
 .footer-socialmedia-icons {
   display: flex;
   justify-content: center;
-  color: var(--color-data-bases);
+  color: var(--color-txt-acento);
   padding-bottom: 1rem;
 }
 
 .footer-icons {
-  color: var(--color-teal-muy-clarito);
+  color: var(--color-txt-light);
   margin: 1rem;
   size: 3rem;
 }
 
 .footer-color-icons {
-  color: var(--color-teal-muy-clarito);
+  color: var(--color-txt-light);
 }
 
 .footer-signature-container {
@@ -819,7 +892,7 @@ header,
   .icono-burger {
     display: block;
     font-size: 30px;
-    color: var(--color-pad);
+    color: var(--color-icons);
   }
 
   /*--------------------------------
@@ -1164,10 +1237,10 @@ header,
   /*data bases*/
   color: #483d8b;
   /*violeta complementario*/
-  color: rgb(0, 128, 128);
-  color: rgb(19, 81, 68);
+  color: #008080;
+  color: #135144;
   /*verde oscuro*/
-  color: rgb(64, 81, 85);
+  color: #405155;
   /*gris oscuro*/
   color: #a8f0df;
   /*teal muy clarito*/

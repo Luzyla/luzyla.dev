@@ -107,7 +107,7 @@ export function SocialMediaIcons({
 
 SocialMediaIcons.defaultProps = {
   classNameContainer: "contenedor-icon-socialmedia",
-  colorIcon: "#007b67",
+  colorIcon: "var(--color-icons)", //#007b67
   sizeIcon: "2.5rem",
   classNameIcon: "icon-socialmedia",
   classNameIconsTitle: "hidden",

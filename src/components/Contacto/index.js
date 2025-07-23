@@ -60,7 +60,7 @@ export function Contacto() {
         <aside className="contenedor-aside-icons">
           <SocialMediaIcons
             classNameContainer="contenedor-iconos-contacto"
-            colorIcon="var(--color-pc)"
+            colorIcon="var(--color-icons)"
             sizeIcon="2.8rem"
             classNameIcon="icons-contact"
             classNameIconsTitle="icons-title"

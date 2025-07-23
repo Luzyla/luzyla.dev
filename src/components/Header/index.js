@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { NavMenu } from "../NavMenu";
 import { FaBars } from "react-icons/fa6";
+import { DarkLightModeButton } from "../DarkLightModeButton";
 
-export function Header() {
+export function Header({ theme, setTheme}) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -44,6 +45,10 @@ export function Header() {
           classNameBtn="menu-header nav-header"
           handleToggleMenu={handleToggleMenu}
         ></NavMenu>
+        <DarkLightModeButton 
+          theme={theme}
+          setTheme={setTheme}
+        />
       </nav>
     </header>
   );

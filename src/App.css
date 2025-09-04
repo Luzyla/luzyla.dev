@@ -625,6 +625,10 @@ header,
   font-family: "Montserrat", "sans serif";
 }
 
+.button:disabled {
+  opacity: 0.5;
+}
+
 .campo-form-msg {
   field-sizing: content;
 }

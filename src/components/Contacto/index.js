@@ -10,6 +10,7 @@ export function Contacto() {
   });
 
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,17 +19,19 @@ export function Contacto() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
 
-    try {
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbz2mSa72HENxtrX8FmnE-H27CzEEV6q-_V0-2MiOBnL50pijVRPm_h4w8XKrvf9giIPKQ/exec";
+    // try {
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbz2mSa72HENxtrX8FmnE-H27CzEEV6q-_V0-2MiOBnL50pijVRPm_h4w8XKrvf9giIPKQ/exec";
 
-      const formDataToSend = new URLSearchParams();
-      Object.keys(formData).forEach((key) => {
+
+    const formDataToSend = new URLSearchParams();
+    Object.keys(formData).forEach((key) => {
         formDataToSend.append(key, formData[key]);
-      });
+    });
 
-      fetch(scriptURL, {
+    fetch(scriptURL, {
         redirect: "follow",
         method: "POST",
         body: formDataToSend.toString(),
@@ -36,19 +39,20 @@ export function Contacto() {
           "Content-type": "text/plain;charset=utf-8",
         },
       })
-        .then((response) => response.json())
-        .then((data) => {
+      .then((response) => response.json())
+      .then((data) => {
           console.log("Formulario enviado: ", data);
           setSent(true);
           setFormData({ nombre: "", email: "", message: "" });
         })
-        .catch((error) => {
-          console.log("Error (then) al enviar el formulario: ", error);
+      .catch((error) => {
+          console.log("Error al enviar el formulario: ", error);
+        })
+      .finally(() => {
+          setLoading(false);
         });
-    } catch (error) {
-      console.log("Error al enviar el formulario: ", error);
-    }
-  };
+      };
+  
 
   return (
     <section className="seccion-contacto" id="a-contacto">
@@ -115,7 +119,7 @@ export function Contacto() {
               type="submit"
               value={"SUBMIT"}
               className="button campo-form campo-form-button"
-              disable={sent}
+              disabled={loading}
             />
           </form>
         </div>

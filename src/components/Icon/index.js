@@ -12,7 +12,7 @@ export function Icon({
       className={className}
       size={size}
       color={color}
-      onclick={onClick}
+      onClick={onClick}
     />
   );
 }

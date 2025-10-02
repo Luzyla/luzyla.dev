@@ -6,7 +6,7 @@ import { Link } from "../Link";
 const initProjectList = [
   {
     id: 1,
-    link: "http://luzyla.github.io/proyecto-2-tienda-viajes/",
+    link: "https://store.luzyla.dev/",
     dataName: "js",
     imageUrl: "./images/ecommerce.svg",
     altText: "Travel E-commerce",
@@ -22,7 +22,7 @@ const initProjectList = [
   },
   {
     id: 3,
-    link: "http://luzyla.github.io/proyecto-5-marvel-comics/",
+    link: "https://comics.luzyla.dev/",
     dataName: "js",
     imageUrl: "./images/comics.svg",
     altText: "Comic Search (Marvel API)",
@@ -38,8 +38,8 @@ const initProjectList = [
   },
   {
     id: 5,
-    link: "https://luzyla.github.io/mytree/",
-    dataName: "html",
+    link: "https://mytree.luzyla.dev/",
+    dataName: "html", // migrar a reactd
     imageUrl: "./images/social-tree.svg",
     altText: "MyTree (Link-in-Bio Tool)",
     txtContent: "MyTree Tool",
@@ -54,7 +54,7 @@ const initProjectList = [
   },
   {
     id: 7,
-    link: "https://luzyla.github.io/piedraPapelTijera/",
+    link: "https://game-rps.luzyla.dev/",
     dataName: "js",
     imageUrl: "./images/hands-play.svg",
     altText: "Rock, Paper, Scissors Game",
@@ -62,7 +62,7 @@ const initProjectList = [
   },
   {
     id: 8,
-    link: "https://luzyla.github.io/mug/",
+    link: "https://mug.luzyla.dev/",
     dataName: "html",
     imageUrl: "./images/mug.svg",
     altText: "Mug (Design Tribute)",
@@ -70,7 +70,7 @@ const initProjectList = [
   },
   {
     id: 9,
-    link: "https://luzyla.github.io/librosyviajes-all/",
+    link: "https://booksandtrips.luzyla.dev/",
     dataName: "html",
     imageUrl: "./images/book-lover.svg",
     altText: "Books & Travels",
@@ -78,12 +78,29 @@ const initProjectList = [
   },
   {
     id: 10,
-    link: "https://nleats-surprise.netlify.app/",
+    link: "https://quotes.luzyla.dev/",
     dataName: "js",
     imageUrl: "./images/thank-you.svg",
     altText: "Random Quote Generator",
     txtContent: "Random Quote Generator",
+  },
+  {
+    id: 11,
+    link: "https://luzyla.github.io/todomachine-react-platzi/",
+    dataName: "react",
+    imageUrl: "./images/projects/Checklist-pana.svg",
+    altText: "ToDo List Machine",
+    txtContent: "To Do List",
+  },
+  {
+    id: 12,
+    link: "https://sentinel-luzyladev.vercel.app/",
+    dataName: "react",
+    imageUrl: "./images/projects/Sentinell.svg",
+    altText: "Sentinell",
+    txtContent: "Sentinell",
   }
+ 
 ];
 
 export function Proyectos() {

@@ -28,11 +28,11 @@ export function Hola() {
           </ul>
         </div>
         <picture className="img-hola-container">
-<Image
-          className="img-hola"
-          url="../images/LuzylaDev.png"
-          txtAlt="Avatar Luzyla.dev"
-        ></Image>
+          <Image
+            className="img-hola"
+            url="../images/LuzylaDev.png"
+            txtAlt="Avatar Luzyla.dev"
+          ></Image>
         </picture>
         
       </div>

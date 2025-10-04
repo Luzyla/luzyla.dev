@@ -202,6 +202,7 @@ a,
 ----------------------------------*/
 .header-fixed {
   position: fixed;
+  z-index: 1;
 }
 
 .nav-header {
@@ -312,8 +313,18 @@ header,
   padding: 30px;
 }
 
+.img-hola-container {
+  margin: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+}
+
 .img-hola {
-  width: 40%;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
+  object-fit: cover; 
 }
 
 .p-hola {
@@ -921,11 +932,22 @@ header,
   .texto-hola {
     padding: 5px;
     width: 100vw;
+    order: 2;
   }
 
   .img-hola {
     width: 70%;
-    margin: 20px;
+  }
+
+  .img-hola-container {
+    order: 1;
+    align-items: flex-end;
+    margin: 0;
+    margin-top: 6rem;
+  }
+
+  .contenedor-hola h3 {
+    margin-top: 2rem;
   }
 
   .p-hola,
@@ -1136,6 +1158,10 @@ header,
 
   .p-hola {
     font-size: 20px;
+  }
+
+  .img-hola {
+    width: 65%;
   }
 
   /*--------------------------------

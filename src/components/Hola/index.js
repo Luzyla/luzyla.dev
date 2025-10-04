@@ -27,11 +27,14 @@ export function Hola() {
             <SocialMediaIcons contactMe={false} />
           </ul>
         </div>
-        <Image
+        <picture className="img-hola-container">
+<Image
           className="img-hola"
-          url="../images/hola-lu-left.svg"
-          txtAlt=""
+          url="../images/LuzylaDev.png"
+          txtAlt="Avatar Luzyla.dev"
         ></Image>
+        </picture>
+        
       </div>
     </section>
   );

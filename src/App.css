@@ -312,8 +312,18 @@ header,
   padding: 30px;
 }
 
+.img-hola-container {
+  margin: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+}
+
 .img-hola {
-  width: 40%;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
+  object-fit: cover; 
 }
 
 .p-hola {

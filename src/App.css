@@ -1213,6 +1213,17 @@ header,
     width: 65%;
   }
 
+  .texto-hola {
+  width: 75%;
+  margin-left: 8rem;
+ }
+ 
+ .img-hola-container {
+  justify-content: flex-start;
+  align-items: flex-end; 
+  margin-left: 3rem;
+ }
+
   /*--------------------------------
             SECCIÓN SKILLS
     ----------------------------------*/

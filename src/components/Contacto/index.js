@@ -7,6 +7,7 @@ export function Contacto() {
     nombre: "",
     email: "",
     message: "",
+    honeypot: "",
   });
 
   const [sent, setSent] = useState(false);
@@ -19,40 +20,46 @@ export function Contacto() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (formData.honeypot && formData.honeypot.length > 0) {
+      console.log(formData, formData.honeypot);
+      setSent(true);
+      setFormData({ nombre: "", email: "", message: "", honeypot: "" });
+      return;
+    }
+
     setLoading(true);
 
-    // try {
     const scriptURL =
       "https://script.google.com/macros/s/AKfycbz2mSa72HENxtrX8FmnE-H27CzEEV6q-_V0-2MiOBnL50pijVRPm_h4w8XKrvf9giIPKQ/exec";
 
-
     const formDataToSend = new URLSearchParams();
     Object.keys(formData).forEach((key) => {
-        formDataToSend.append(key, formData[key]);
+      formDataToSend.append(key, formData[key]);
     });
 
     fetch(scriptURL, {
-        redirect: "follow",
-        method: "POST",
-        body: formDataToSend.toString(),
-        headers: {
-          "Content-type": "text/plain;charset=utf-8",
-        },
-      })
+      redirect: "follow",
+      method: "POST",
+      body: formDataToSend.toString(),
+      headers: {
+        "Content-type": "text/plain;charset=utf-8",
+      },
+    })
       .then((response) => response.json())
       .then((data) => {
-          console.log("Formulario enviado: ", data);
-          setSent(true);
-          setFormData({ nombre: "", email: "", message: "" });
-        })
+        console.log("Formulario enviado: ", data);
+
+        setSent(true);
+        setFormData({ nombre: "", email: "", message: "" });
+      })
       .catch((error) => {
-          console.log("Error al enviar el formulario: ", error);
-        })
+        console.log("Error al enviar el formulario: ", error);
+      })
       .finally(() => {
-          setLoading(false);
-        });
-      };
-  
+        setLoading(false);
+      });
+  };
 
   return (
     <section className="seccion-contacto" id="a-contacto">
@@ -110,7 +117,19 @@ export function Contacto() {
                 value={formData.message}
                 onChange={handleChange}
                 className="campo-form campo-form-msg"
-                placeholder="Escribe aquí tu mensaje"
+                placeholder="Write your message here"
+                required
+              />
+            </label>
+
+            <label id="honeypot" className="etiqueta-form hidden">
+              Honeypot*:
+              <textarea
+                name="honeypot"
+                value={formData.honeypot}
+                onChange={handleChange}
+                className="campo-form campo-form-msg"
+                placeholder="Write your message here"
                 required
               />
             </label>

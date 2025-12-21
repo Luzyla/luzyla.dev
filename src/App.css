@@ -317,14 +317,13 @@ header,
   margin: 2.5rem;
   display: flex;
   justify-content: center;
-  align-items: flex-end; 
+  align-items: flex-end;
 }
 
 .img-hola {
   width: 100%;
-  -webkit-mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
-  object-fit: cover; 
+  mask-image: linear-gradient(black 90%, transparent);
+  object-fit: cover;
 }
 
 .p-hola {
@@ -962,7 +961,7 @@ header,
   .texto-hola h1 {
     white-space: nowrap;
     font-size: 50px;
-   }
+  }
 
   .p-hello2 {
     margin: 20px 0 35px 0;
@@ -993,14 +992,13 @@ header,
   .button-section {
     display: flex;
     flex-wrap: wrap;
-
   }
 
   .icon-socialmedia {
-  margin-right: 1rem;
-  
-  /* ^^^ el texto del boton queda siempre en la misma línea */
-}
+    margin-right: 1rem;
+
+    /* ^^^ el texto del boton queda siempre en la misma línea */
+  }
 
   /*--------------------------------
             TEXTOS
@@ -1123,7 +1121,6 @@ header,
 
   .footer-socialmedia-icons {
     width: 100%;
-    
   }
 
   .icons-title {
@@ -1144,7 +1141,9 @@ header,
                 FOOTER
     ----------------------------------*/
   /* -- MENÚ -- */
-  .nav-footer, .menu-footer, .footer-socialmedia-icons {
+  .nav-footer,
+  .menu-footer,
+  .footer-socialmedia-icons {
     display: none;
   }
 
@@ -1214,15 +1213,15 @@ header,
   }
 
   .texto-hola {
-  width: 75%;
-  margin-left: 8rem;
- }
- 
- .img-hola-container {
-  justify-content: flex-start;
-  align-items: flex-end; 
-  margin-left: 3rem;
- }
+    width: 75%;
+    margin-left: 8rem;
+  }
+
+  .img-hola-container {
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 3rem;
+  }
 
   /*--------------------------------
             SECCIÓN SKILLS

@@ -24,7 +24,7 @@ export function Contacto() {
     if (formData.honeypot && formData.honeypot.length > 0) {
       console.log(formData, formData.honeypot);
       setSent(true);
-      setFormData({ Nombre: "", Email: "", Message: "", honeypot: "" });
+      setFormData({ nombre: "", email: "", message: "", honeypot: "" });
       return;
     }
 

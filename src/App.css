@@ -50,8 +50,8 @@
 
   --text-shadow: #42424280;
   --box-shadow-header: 0 0 29px 0 #86868640;
-  --box-shadow-form: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --box-shadow-form:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --box-shadow-card: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 
@@ -230,6 +230,7 @@ a,
   color: var(--color-txt-acento);
   padding: 10px 40px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .button-mode {

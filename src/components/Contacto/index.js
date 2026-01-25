@@ -130,7 +130,6 @@ export function Contacto() {
                 onChange={handleChange}
                 className="campo-form campo-form-msg"
                 placeholder="Write your message here"
-                required
               />
             </label>
 

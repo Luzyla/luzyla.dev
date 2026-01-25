@@ -24,14 +24,14 @@ export function Contacto() {
     if (formData.honeypot && formData.honeypot.length > 0) {
       console.log(formData, formData.honeypot);
       setSent(true);
-      setFormData({ nombre: "", email: "", message: "", honeypot: "" });
+      setFormData({ Nombre: "", Email: "", Message: "", honeypot: "" });
       return;
     }
 
     setLoading(true);
 
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbz2mSa72HENxtrX8FmnE-H27CzEEV6q-_V0-2MiOBnL50pijVRPm_h4w8XKrvf9giIPKQ/exec";
+      "https://script.google.com/macros/s/AKfycbxf2BdBlIDbwqIxpE-e47YXZ2dZ84v75HMDWKfkaryQqSwZvHl5HVxRp5epEy-2bYivEw/exec";
 
     const formDataToSend = new URLSearchParams();
     Object.keys(formData).forEach((key) => {
@@ -51,7 +51,7 @@ export function Contacto() {
         console.log("Formulario enviado: ", data);
 
         setSent(true);
-        setFormData({ nombre: "", email: "", message: "" });
+        setFormData({ nombre: "", email: "", message: "", honeypot: "" });
       })
       .catch((error) => {
         console.log("Error al enviar el formulario: ", error);
@@ -130,6 +130,7 @@ export function Contacto() {
                 onChange={handleChange}
                 className="campo-form campo-form-msg"
                 placeholder="Write your message here"
+                autoComplete="off"
               />
             </label>
 

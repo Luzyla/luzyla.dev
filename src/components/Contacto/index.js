@@ -41,14 +41,15 @@ export function Contacto() {
     fetch(scriptURL, {
       redirect: "follow",
       method: "POST",
+      mode: "no-cors",
       body: formDataToSend.toString(),
       headers: {
         "Content-type": "text/plain;charset=utf-8",
       },
     })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Formulario enviado: ", data);
+      // .then((response) => response.json())
+      .then(() => {
+        console.log("Formulario enviado!");
 
         setSent(true);
         setFormData({ nombre: "", email: "", message: "", honeypot: "" });

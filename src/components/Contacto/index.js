@@ -22,7 +22,7 @@ export function Contacto() {
     e.preventDefault();
 
     if (formData.honeypot && formData.honeypot.length > 0) {
-      console.log("BOT DETECTADO", formData, formData.honeypot);
+      console.log("BOT DETECTADO", formData.honeypot);
       setSent(true);
       setFormData({ nombre: "", email: "", message: "", honeypot: "" });
       return;
@@ -31,31 +31,24 @@ export function Contacto() {
     setLoading(true);
 
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbxf2BdBlIDbwqIxpE-e47YXZ2dZ84v75HMDWKfkaryQqSwZvHl5HVxRp5epEy-2bYivEw/exec";
+      "https://script.google.com/macros/s/AKfycbxChXTOi1f7S_2Lvk-FFi9YYaWyFWiBz5mWEFAO52i2fVg56SAh7bJVL1znIVTV7UAKOA/exec";
 
-    const formDataToSend = new FormData();
+    const formDataToSend = new URLSearchParams();
     formDataToSend.append("nombre", formData.nombre);
     formDataToSend.append("email", formData.email);
     formDataToSend.append("message", formData.message);
-    // Object.keys(formData).forEach((key) => {
-    //   formDataToSend.append(key, formData[key]);
-    // });
 
     fetch(scriptURL, {
       redirect: "follow",
       method: "POST",
-      // mode: "no-cors",
-      body: formDataToSend,
+      mode: "no-cors",
       headers: {
         "Content-type": "text/plain;charset=utf-8",
       },
+      body: formDataToSend.toString(),
     })
-      .then((response) => {
-        console.log("Respuesta completa: ", response);
-        return response.text();
-      })
-      .then((data) => {
-        console.log("Formulario enviado!", data);
+      .then(() => {
+        console.log("Formulario enviado!");
 
         setSent(true);
         setFormData({ nombre: "", email: "", message: "", honeypot: "" });

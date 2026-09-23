@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { SocialMediaIcons } from "../SocialMediaIcons";
+import { Link } from "../Link";
+import { Link as RouterLink } from "react-router-dom";
 
 export function Contacto() {
   const [formData, setFormData] = useState({
@@ -31,12 +33,11 @@ export function Contacto() {
     setLoading(true);
 
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbxChXTOi1f7S_2Lvk-FFi9YYaWyFWiBz5mWEFAO52i2fVg56SAh7bJVL1znIVTV7UAKOA/exec";
+      "https://script.google.com/macros/s/AKfycby0zrVlZecbuTTbPwwMRF5oG5mk6mVRpRO32l5QBXuSbN0aL9mg7NS5woM8hzg_fkz0jQ/exec";
 
-    const formDataToSend = new URLSearchParams();
-    formDataToSend.append("nombre", formData.nombre);
-    formDataToSend.append("email", formData.email);
-    formDataToSend.append("message", formData.message);
+    const body = `nombre=${encodeURIComponent(formData.nombre)}&email=${encodeURIComponent(formData.email)}&message=${encodeURIComponent(formData.message)}`;
+
+    console.log("Enviando:", body);
 
     fetch(scriptURL, {
       redirect: "follow",
@@ -45,7 +46,7 @@ export function Contacto() {
       headers: {
         "Content-type": "text/plain;charset=utf-8",
       },
-      body: formDataToSend.toString(),
+      body: body,
     })
       .then(() => {
         console.log("Formulario enviado!");
@@ -136,7 +137,18 @@ export function Contacto() {
                 autoComplete="off"
               />
             </label>
-
+            <div className="privacycheck-form">
+              <input type="checkbox" required></input> I have read and accept
+              the{" "}
+              <RouterLink
+                to="/privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Privacy Policy
+              </RouterLink>
+              .
+            </div>
             <input
               type="submit"
               value={"SUBMIT"}

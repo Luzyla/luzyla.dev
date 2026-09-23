@@ -653,7 +653,7 @@ header,
 
 .campo-form-button {
   background-color: var(--background-color-dark);
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .msg-form-enviado {
@@ -661,6 +661,58 @@ header,
   padding: 1rem;
   color: var(--color-txt-purple);
   font-weight: 600;
+}
+
+.privacycheck-form {
+  background-color: none;
+  padding-top: 1.5rem;
+  /* margin-top: 1rem; */
+  color: var(--color-txt-purple);
+  text-align: center;
+}
+
+/*--------------------------------
+        PRIVACY AND LEGAL
+----------------------------------*/
+.seccion-privacy {
+  padding-top: 8rem;
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-privacy {
+  max-width: 900px;
+  padding-bottom: 2rem;
+}
+
+.privacy-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 2rem;
+  justify-content: left;
+}
+
+.privacy-subtitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 2rem;
+  margin: 2rem 0 0 0;
+}
+
+.privacy-text {
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 2rem;
+  margin-top: 0.6rem;
+}
+
+.link-privacy {
+  color: var(--color-txt-base2);
+  font-weight: normal;
 }
 
 /*--------------------------------
@@ -1158,6 +1210,16 @@ header,
 
   .amor {
     font-size: 14px;
+  }
+
+  .seccion-privacy {
+    align-items: flex-start;
+  }
+
+  .privacy-text,
+  .privacy-subtitle,
+  .privacy-title {
+    padding: 0 1.5rem;
   }
 }
 

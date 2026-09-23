@@ -3,6 +3,7 @@ import { NavMenu } from "../NavMenu";
 import { Signature } from "../Signature";
 import { FreeResources } from "../FreeResources";
 import { SocialMediaIcons } from "../SocialMediaIcons";
+import { Link as RouterLink } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -20,6 +21,26 @@ export function Footer() {
       <Signature></Signature>
 
       <FreeResources></FreeResources>
+      <div>
+        <p className="amor link-privacy">
+          © Lucila Di Lorenzo |{" "}
+          <RouterLink
+            to="/legal-notice"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Legal Notice
+          </RouterLink>{" "}
+          |{" "}
+          <RouterLink
+            to="/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy Policy
+          </RouterLink>
+        </p>
+      </div>
     </footer>
   );
 }

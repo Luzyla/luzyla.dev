@@ -715,6 +715,17 @@ header,
   font-weight: normal;
 }
 
+.link-privacy-footer {
+  color: var(--color-txt-light);
+  font-size: 0.8rem;
+}
+
+.link-privacy-footer a {
+  text-decoration: none;
+  color: var(--color-txt-light);
+  transition: transform 0.4s;
+}
+
 /*--------------------------------
             FOOTER
 ----------------------------------*/

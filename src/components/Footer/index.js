@@ -20,9 +20,8 @@ export function Footer() {
       />
       <Signature></Signature>
 
-      <FreeResources></FreeResources>
       <div>
-        <p className="amor link-privacy">
+        <p className="link-privacy-footer">
           © Lucila Di Lorenzo |{" "}
           <RouterLink
             to="/legal-notice"
@@ -41,6 +40,8 @@ export function Footer() {
           </RouterLink>
         </p>
       </div>
+
+      <FreeResources></FreeResources>
     </footer>
   );
 }
